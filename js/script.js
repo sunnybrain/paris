@@ -12,13 +12,14 @@ const userAgent =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36";
 
 const options = {
-  // Accept: "*/*",
+  Accept: "*/*",
   "User-Agent": userAgent,
   headers: headers,
-  // "Access-Control-Allow-Method": "GET",
-  // "Access-Control-Allow-Headers": "Content-Type",
-  // "Access-Control-Allow-Credentials": true,
-  // "Access-Control-Allow-Origin": "https://api.yelp.com",
+  mode: "no-cors",
+  "Access-Control-Allow-Method": "GET",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Credentials": true,
+  "Access-Control-Allow-Origin": "https://api.yelp.com",
 };
 
 async function getData() {
