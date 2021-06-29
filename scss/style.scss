@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap");
+
+$font-family-primary: "Maven Pro", sans-serif;
+
+$color-primary: #3b4487;
+$color-primary-shade1: #717bc1;
+
+$color-secondary: #ac1c1c;
+
+$button-burger-size: 1.5rem;
+
+/* Universal Properties */
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: $font-family-primary;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Modules */
+
+@import "_navbar";
+@import "_banner";
