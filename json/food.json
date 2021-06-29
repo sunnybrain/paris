@@ -1,0 +1,767 @@
+{
+  "businesses": [
+    {
+      "id": "rbBs01WKKsVZG61q5IwJ_w",
+      "alias": "holybelly-5-paris-2",
+      "name": "Holybelly 5",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4EvXgjj0spXR_F-Uej9Csw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/holybelly-5-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 236,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.871022,
+        "longitude": 2.359819
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "5 rue Lucien Sampaix",
+        "address2": "",
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75010",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["5 rue Lucien Sampaix", "75010 Paris", "France"]
+      },
+      "phone": "+33182280080",
+      "display_phone": "+33 1 82 28 00 80",
+      "distance": 1639.0251773730674
+    },
+    {
+      "id": "0ywhA79RdU_uwPsmXJcYKw",
+      "alias": "blé-sucré-paris-2",
+      "name": "Blé Sucré",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/5mZxJUNQB5sWquR21f-a6g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bl%C3%A9-sucr%C3%A9-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 295,
+      "categories": [
+        {
+          "alias": "bakeries",
+          "title": "Bakeries"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.850565,
+        "longitude": 2.376759
+      },
+      "transactions": [],
+      "price": "€",
+      "location": {
+        "address1": "7 rue Antoine Vollon",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75012",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["7 rue Antoine Vollon", "75012 Paris", "France"]
+      },
+      "phone": "+33143407773",
+      "display_phone": "+33 1 43 40 77 73",
+      "distance": 2831.426504410104
+    },
+    {
+      "id": "WHHt_Jb8Tgidn9mW7oDnIg",
+      "alias": "la-coïncidence-paris-4",
+      "name": "La Coïncidence",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/QdrAgEgbd5TLlqZYT_dezg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/la-co%C3%AFncidence-paris-4?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 493,
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.868105,
+        "longitude": 2.284365
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "15 rue Mesnil",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75116",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["15 rue Mesnil", "75116 Paris", "France"]
+      },
+      "phone": "+33147559644",
+      "display_phone": "+33 1 47 55 96 44",
+      "distance": 4281.588159098756
+    },
+    {
+      "id": "-0iLH7iQNYtoURciDpJf6w",
+      "alias": "le-comptoir-de-la-gastronomie-paris",
+      "name": "Le Comptoir de la Gastronomie",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Je6THJBI0U0b1N47INfaKQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/le-comptoir-de-la-gastronomie-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 1093,
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.8645157999652,
+        "longitude": 2.34540185646608
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "34 rue Montmartre",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75001",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["34 rue Montmartre", "75001 Paris", "France"]
+      },
+      "phone": "+33142333132",
+      "display_phone": "+33 1 42 33 31 32",
+      "distance": 370.8275165771047
+    },
+    {
+      "id": "xcC4XZCk2cSPxfHGKcGfPg",
+      "alias": "chez-alain-miam-miam-paris",
+      "name": "Chez Alain Miam Miam",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/VXCpqumlx9yx8HuimnHaSw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/chez-alain-miam-miam-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 160,
+      "categories": [
+        {
+          "alias": "creperies",
+          "title": "Creperies"
+        },
+        {
+          "alias": "bakeries",
+          "title": "Bakeries"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.862262,
+        "longitude": 2.362023
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "26 rue Charlot",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75003",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["26 rue Charlot", "75003 Paris", "France"]
+      },
+      "phone": "+33183970415",
+      "display_phone": "+33 1 83 97 04 15",
+      "distance": 1454.3021080264577
+    },
+    {
+      "id": "657yy3D4SwyQN3xIjG1Iww",
+      "alias": "le-potager-du-père-thierry-paris-2",
+      "name": "Le Potager du Père Thierry",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_FHiBmcjKRbmoAIXxeFOcA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/le-potager-du-p%C3%A8re-thierry-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 426,
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.884476,
+        "longitude": 2.341335
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "16 rue des Trois Frères",
+        "address2": null,
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75018",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["16 rue des Trois Frères", "75018 Paris", "France"]
+      },
+      "phone": "+33153282620",
+      "display_phone": "+33 1 53 28 26 20",
+      "distance": 2504.5227183366774
+    },
+    {
+      "id": "AzmLFVuOHT3QbfGcoLe4qg",
+      "alias": "happy-caffé-paris-2",
+      "name": "Happy Caffé",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/p0mqr1w0C6d0SSQwPWCBnQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/happy-caff%C3%A9-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 54,
+      "categories": [
+        {
+          "alias": "creperies",
+          "title": "Creperies"
+        },
+        {
+          "alias": "sandwiches",
+          "title": "Sandwiches"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 48.86476,
+        "longitude": 2.329615
+      },
+      "transactions": [],
+      "price": "€",
+      "location": {
+        "address1": "214 rue de Rivoli",
+        "address2": "",
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75001",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["214 rue de Rivoli", "75001 Paris", "France"]
+      },
+      "phone": "+33953529691",
+      "display_phone": "+33 9 53 52 96 91",
+      "distance": 968.2549973645454
+    },
+    {
+      "id": "OlKlrqbTx94iMPuakMs0Pw",
+      "alias": "du-pain-et-des-idées-paris-10-2",
+      "name": "Du Pain et des Idées",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/vX6-XwyqiShrR5npENG8PA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/du-pain-et-des-id%C3%A9es-paris-10-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 453,
+      "categories": [
+        {
+          "alias": "bakeries",
+          "title": "Bakeries"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.8712,
+        "longitude": 2.3628999
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "34 rue Yves Toudic",
+        "address2": null,
+        "address3": null,
+        "city": "Paris 10",
+        "zip_code": "75010",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["34 rue Yves Toudic", "75010 Paris 10", "France"]
+      },
+      "phone": "+33142404452",
+      "display_phone": "+33 1 42 40 44 52",
+      "distance": 1835.2944750516774
+    },
+    {
+      "id": "2xMKFWLjktrlRWGzZAkiEQ",
+      "alias": "al-caratello-paris-2",
+      "name": "Al Caratello",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_gSOAVKW_7GTKc-JEKpTMw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/al-caratello-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 194,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.885237,
+        "longitude": 2.335898
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "5 rue Audran",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75018",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["5 rue Audran", "75018 Paris", "France"]
+      },
+      "phone": "+33142622423",
+      "display_phone": "+33 1 42 62 24 23",
+      "distance": 2628.483915625087
+    },
+    {
+      "id": "OonhT4mr0ZOK7-yD3t1nOA",
+      "alias": "a-lacroix-paris-2",
+      "name": "A. Lacroix",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/v4D0oeWJ55tKRkfoFeZMbg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/a-lacroix-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 70,
+      "categories": [
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        },
+        {
+          "alias": "cakeshop",
+          "title": "Patisserie/Cake Shop"
+        },
+        {
+          "alias": "icecream",
+          "title": "Ice Cream & Frozen Yogurt"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 48.851727,
+        "longitude": 2.349427
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "11 quai de Montebello",
+        "address2": "",
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75005",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["11 quai de Montebello", "75005 Paris", "France"]
+      },
+      "phone": "+33174641486",
+      "display_phone": "+33 1 74 64 14 86",
+      "distance": 1256.1714124565817
+    },
+    {
+      "id": "9W9IyZFTJfTDNtwGKcvFYw",
+      "alias": "pierre-hermé-paris-10",
+      "name": "Pierre Hermé",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Vya-tV9OYStpxCIU3sj8pg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pierre-herm%C3%A9-paris-10?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 184,
+      "categories": [
+        {
+          "alias": "chocolate",
+          "title": "Chocolatiers & Shops"
+        },
+        {
+          "alias": "cakeshop",
+          "title": "Patisserie/Cake Shop"
+        },
+        {
+          "alias": "macarons",
+          "title": "Macarons"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.86648,
+        "longitude": 2.3255
+      },
+      "transactions": [],
+      "price": "€€€",
+      "location": {
+        "address1": "4 rue Cambon",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75001",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["4 rue Cambon", "75001 Paris", "France"]
+      },
+      "phone": "+33143544777",
+      "display_phone": "+33 1 43 54 47 77",
+      "distance": 1311.530325720962
+    },
+    {
+      "id": "yCtBt3tKarSyyaBDQLd0bg",
+      "alias": "pierre-hermé-paris-9",
+      "name": "Pierre Hermé",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/VvPqjNHBjZz5RkFp6hS0RA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pierre-herm%C3%A9-paris-9?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 609,
+      "categories": [
+        {
+          "alias": "chocolate",
+          "title": "Chocolatiers & Shops"
+        },
+        {
+          "alias": "cakeshop",
+          "title": "Patisserie/Cake Shop"
+        },
+        {
+          "alias": "macarons",
+          "title": "Macarons"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.851525,
+        "longitude": 2.332764
+      },
+      "transactions": [],
+      "price": "€€€",
+      "location": {
+        "address1": "72 rue Bonaparte",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75006",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["72 rue Bonaparte", "75006 Paris", "France"]
+      },
+      "phone": "+33143544777",
+      "display_phone": "+33 1 43 54 47 77",
+      "distance": 1348.0682624311075
+    },
+    {
+      "id": "hiqQTVdbpcQtgCqu2M6PqQ",
+      "alias": "le-cinq-paris",
+      "name": "Le Cinq",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/hWCc8_pvL1X4hQ_hnz7gnQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/le-cinq-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 135,
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.8688,
+        "longitude": 2.30083
+      },
+      "transactions": [],
+      "price": "€€€€",
+      "location": {
+        "address1": "",
+        "address2": "31 avenue George V",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75008",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["31 avenue George V", "75008 Paris", "France"]
+      },
+      "phone": "+33149527154",
+      "display_phone": "+33 1 49 52 71 54",
+      "distance": 3128.3152144857895
+    },
+    {
+      "id": "E3PvQMOiAnCVTUgPSU1mJQ",
+      "alias": "le-volant-basque-paris",
+      "name": "Le Volant Basque",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/OjhCcaGC2JxJztBF5s2Icg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/le-volant-basque-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 223,
+      "categories": [
+        {
+          "alias": "basque",
+          "title": "Basque"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.8499,
+        "longitude": 2.29127
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "13 rue Béatrix Dussane",
+        "address2": null,
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75015",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["13 rue Béatrix Dussane", "75015 Paris", "France"]
+      },
+      "phone": "+33145752767",
+      "display_phone": "+33 1 45 75 27 67",
+      "distance": 3952.982069619958
+    },
+    {
+      "id": "eZ2DpDfJQgVx7iw5Itx_Xw",
+      "alias": "berthillon-paris-2",
+      "name": "Berthillon",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/kOvRI8as05K2aggPlrbXMA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/berthillon-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 729,
+      "categories": [
+        {
+          "alias": "icecream",
+          "title": "Ice Cream & Frozen Yogurt"
+        },
+        {
+          "alias": "tea",
+          "title": "Tea Rooms"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.851702,
+        "longitude": 2.356713
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "29-31 rue Saint-Louis en l'Île",
+        "address2": null,
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75004",
+        "country": "FR",
+        "state": "75",
+        "display_address": [
+          "29-31 rue Saint-Louis en l'Île",
+          "75004 Paris",
+          "France"
+        ]
+      },
+      "phone": "+33143543161",
+      "display_phone": "+33 1 43 54 31 61",
+      "distance": 1560.8235537392516
+    },
+    {
+      "id": "nf7DA_2nihG63h3LyFUABQ",
+      "alias": "pizza-julia-paris",
+      "name": "Pizza Julia",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LuqG6tYQEwgjRibPZgamRw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pizza-julia-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 133,
+      "categories": [
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.8516654154578,
+        "longitude": 2.37197349693813
+      },
+      "transactions": [],
+      "price": "€",
+      "location": {
+        "address1": "43 rue de Charenton",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75012",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["43 rue de Charenton", "75012 Paris", "France"]
+      },
+      "phone": "+33177196875",
+      "display_phone": "+33 1 77 19 68 75",
+      "distance": 2464.0005068318546
+    },
+    {
+      "id": "-tqQsTz6TwJWiqvMWvXIEA",
+      "alias": "le-hide-paris-2",
+      "name": "Le Hide",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uJ-8TdqTLxh4234o_kTaxg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/le-hide-paris-2?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 211,
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.8763,
+        "longitude": 2.29401
+      },
+      "transactions": [],
+      "price": "€€€",
+      "location": {
+        "address1": "10 Rue Gén Lanrezac",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75017",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["10 Rue Gén Lanrezac", "75017 Paris", "France"]
+      },
+      "phone": "+33145741581",
+      "display_phone": "+33 1 45 74 15 81",
+      "distance": 3865.1900348100885
+    },
+    {
+      "id": "IU9_wVOGBKjfqTTpAXpKcQ",
+      "alias": "bistro-des-augustins-paris",
+      "name": "Bistro des Augustins",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hPCZTbuWGgjBvMsB2unxWg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bistro-des-augustins-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 421,
+      "categories": [
+        {
+          "alias": "bistros",
+          "title": "Bistros"
+        },
+        {
+          "alias": "wine_bars",
+          "title": "Wine Bars"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.854754,
+        "longitude": 2.342119
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "39 quai des Grands Augustins",
+        "address2": null,
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75006",
+        "country": "FR",
+        "state": "75",
+        "display_address": [
+          "39 quai des Grands Augustins",
+          "75006 Paris",
+          "France"
+        ]
+      },
+      "phone": "+33143540441",
+      "display_phone": "+33 1 43 54 04 41",
+      "distance": 801.1176096949143
+    },
+    {
+      "id": "flf_IHitjG7bohr-VbOvbA",
+      "alias": "le-petit-canard-paris",
+      "name": "Le Petit Canard",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/GZomUiX8isxQYR-xEtzAfw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/le-petit-canard-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 188,
+      "categories": [
+        {
+          "alias": "french",
+          "title": "French"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.880166,
+        "longitude": 2.337314
+      },
+      "transactions": [],
+      "price": "€€",
+      "location": {
+        "address1": "19 rue Henri Monnier",
+        "address2": null,
+        "address3": null,
+        "city": "Paris",
+        "zip_code": "75009",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["19 rue Henri Monnier", "75009 Paris", "France"]
+      },
+      "phone": "+33149700795",
+      "display_phone": "+33 1 49 70 07 95",
+      "distance": 2055.2043945870105
+    },
+    {
+      "id": "YRMHyCvqMz_lLgpqjNj_tw",
+      "alias": "la-droguerie-du-marais-paris",
+      "name": "La Droguerie du Marais",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YwUvdUKseG8-X8P-vVBPKw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/la-droguerie-du-marais-paris?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
+      "review_count": 213,
+      "categories": [
+        {
+          "alias": "creperies",
+          "title": "Creperies"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 48.85789,
+        "longitude": 2.35797
+      },
+      "transactions": [],
+      "price": "€",
+      "location": {
+        "address1": "56 rue des Rosiers",
+        "address2": "",
+        "address3": "",
+        "city": "Paris",
+        "zip_code": "75004",
+        "country": "FR",
+        "state": "75",
+        "display_address": ["56 rue des Rosiers", "75004 Paris", "France"]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 1248.4868955927175
+    }
+  ],
+  "total": 21300,
+  "region": {
+    "center": {
+      "longitude": 2.3421478271484375,
+      "latitude": 48.86195860677958
+    }
+  }
+}

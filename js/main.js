@@ -1,6 +1,6 @@
 "use strict";
 
-const burgerBtn = document.querySelector(".nav__button-open");
+const burgerBtn = document.querySelector(".button-container");
 const sideBar = document.querySelector(".sidebar");
 
 burgerBtn.addEventListener("click", () => {
