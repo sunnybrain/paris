@@ -35,6 +35,16 @@ a {
 
 /* Modules */
 /* Navbar Section */
+.nav {
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 .nav__container {
   height: 5rem;
   position: relative;
@@ -47,47 +57,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.nav__sidebar {
-  position: absolute;
-  top: calc(100% + 1px);
-  left: -20rem;
-  width: 20rem;
-  background-color: #fff;
-  border-right: 1px solid #717bc1;
-  -webkit-box-shadow: 1rem 1rem 1rem #dcdeef;
-          box-shadow: 1rem 1rem 1rem #dcdeef;
-  z-index: 10;
-  -webkit-transition: left 0.6s;
-  -o-transition: left 0.6s;
-  transition: left 0.6s;
-}
-
-.nav__sidebar--opened {
-  left: 0rem;
-}
-
-.nav__item {
-  padding: 1em;
-  border-bottom: 1px solid #717bc1;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.nav__item:hover {
-  border-bottom: 1px solid #ac1c1c;
-}
-
-.nav__item:hover a {
-  color: #ac1c1c;
-}
-
-.nav__link {
-  color: #3b4487;
-  font-size: 2rem;
-  font-weight: 500;
 }
 
 .nav__button-open {
@@ -134,12 +103,65 @@ a {
 }
 
 /* End of Navbar Section */
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  top: 5rem;
+  left: -26rem;
+  width: 25rem;
+  background-color: #fff;
+  border-right: 1px solid #717bc1;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.4rem #111;
+          box-shadow: 0.2rem 0.2rem 0.4rem #111;
+  z-index: 10;
+  -webkit-transition: left 0.6s;
+  -o-transition: left 0.6s;
+  transition: left 0.6s;
+}
+
+.sidebar--opened {
+  left: 0rem;
+}
+
+.sidebar__item {
+  padding: 1em 2em;
+  border-bottom: 1px solid #717bc1;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sidebar__item i {
+  width: 1.5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.sidebar__item:hover {
+  border-bottom: 1px solid #ac1c1c;
+}
+
+.sidebar__item:hover a {
+  color: #ac1c1c;
+}
+
+.sidebar__link {
+  color: #3b4487;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* End of Sidebar Section */
 /* Banner Section*/
 .banner {
   width: 100%;
   height: 75vh;
   background: url(../images/banner.jpg) no-repeat bottom;
   background-size: cover;
+  position: relative;
+  top: 5rem;
 }
 
 /* End of Banner Section*/

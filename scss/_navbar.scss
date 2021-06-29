@@ -1,6 +1,15 @@
 /* Navbar Section */
 
 .nav {
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 100;
   &__container {
     height: 5rem;
     // border-bottom: 1px solid $color-primary-shade1;
@@ -10,54 +19,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  &__sidebar {
-    // display: none;
-
-    position: absolute;
-    top: calc(100% + 1px);
-    left: -20rem;
-
-    width: 20rem;
-    background-color: #fff;
-    border-right: 1px solid $color-primary-shade1;
-    box-shadow: 1rem 1rem 1rem #dcdeef;
-
-    z-index: 10;
-    transition: left 0.6s;
-
-    &--opened {
-      left: 0rem;
-    }
-  }
-
-  &__list {
-  }
-
-  &__item {
-    padding: 1em;
-    border-bottom: 1px solid $color-primary-shade1;
-
-    transition: all 0.4s;
-
-    & + & {
-      // border-top: 1px solid $color-primary-shade1;
-    }
-
-    &:hover {
-      border-bottom: 1px solid $color-secondary;
-
-      & a {
-        color: $color-secondary;
-      }
-    }
-  }
-
-  &__link {
-    color: $color-primary;
-    font-size: 2rem;
-    font-weight: 500;
   }
 
   &__button-open {

@@ -5,6 +5,10 @@
   height: 75vh;
   background: url(../images/banner.jpg) no-repeat bottom;
   background-size: cover;
+
+  position: relative;
+  top: 5rem;
+
   &__container {
   }
 
