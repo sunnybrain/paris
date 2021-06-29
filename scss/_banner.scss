@@ -10,12 +10,23 @@
   top: 5rem;
 
   &__container {
+    color: $color-secondary;
+  }
+
+  &__txt-content {
+    position: relative;
+    top: 10rem;
+    left: 0;
+
+    max-width: 40rem;
   }
 
   &__subtitle {
+    font-size: 2rem;
   }
 
   &__title {
+    font-size: 6rem;
   }
 }
 

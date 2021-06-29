@@ -164,4 +164,23 @@ a {
   top: 5rem;
 }
 
+.banner__container {
+  color: #ac1c1c;
+}
+
+.banner__txt-content {
+  position: relative;
+  top: 10rem;
+  left: 0;
+  max-width: 40rem;
+}
+
+.banner__subtitle {
+  font-size: 2rem;
+}
+
+.banner__title {
+  font-size: 6rem;
+}
+
 /* End of Banner Section*/
