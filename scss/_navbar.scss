@@ -3,7 +3,7 @@
 $height-nav: 6rem;
 
 .button-container {
-  position: absolute;
+  position: fixed;
   top: $height-nav * 0.5;
   left: 1rem;
 

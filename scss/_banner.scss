@@ -7,9 +7,9 @@
   background-size: cover;
 
   position: relative;
-  top: 5rem;
+  top: $height-nav;
 
-  perspective: 20rem;
+  // perspective: 20rem;
 
   &__container {
     color: $color-secondary;
@@ -27,6 +27,10 @@
   &__subtitle {
     font-size: 3rem;
     color: $color-primary;
+
+    & span {
+      color: $color-secondary;
+    }
   }
 
   &__title {

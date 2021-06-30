@@ -40,8 +40,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -50,3 +54,4 @@ a {
 @import "_navbar";
 @import "_sidebar";
 @import "_banner";
+@import "_section";

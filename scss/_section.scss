@@ -1,0 +1,115 @@
+/* Sections  */
+.section {
+  position: relative;
+  top: $height-nav;
+
+  padding: 2em;
+
+  &__container {
+  }
+
+  &__title {
+    font-size: 4rem;
+    color: $color-primary;
+
+    margin-bottom: 2rem;
+  }
+
+  &__gallery {
+  }
+}
+
+.gallery {
+  display: flex;
+
+  &__guide {
+  }
+}
+
+$size-guide: 350px;
+
+.guide {
+  flex: 0 0 $size-guide;
+  cursor: pointer;
+
+  box-shadow: 0rem 0rem 0.625rem #888;
+  transition: box-shadow 0.3s ease-in, transform 0.4s;
+
+  position: relative;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0rem 0rem 1.25rem #888;
+  }
+
+  &__image-box {
+    width: 100%;
+    height: $size-guide / 1.6;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  &__info {
+    padding: 1em;
+  }
+
+  &__text {
+  }
+
+  &__name-box {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    color: $color-primary;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    margin-bottom: 0.25rem;
+  }
+
+  &__name {
+    color: $color-secondary;
+    font-size: 1.5rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+  &__rating-display {
+    margin-bottom: 1rem;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.5rem;
+  }
+
+  &__rating-stars {
+    margin-right: 1rem;
+  }
+
+  &__reviews {
+    color: $color-primary;
+    font-weight: 700;
+  }
+
+  &__address {
+    color: #888;
+
+    & p:first-child {
+      color: $color-secondary;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+/* End of Sections  */

@@ -1,5 +1,5 @@
 const url =
-  "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=paris&term=sights&sort_by=rating&limit=12";
+  "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=paris&term=sights&sort_by=rating";
 
 const apiKey =
   "P2XEzD7Hvx_Pmb_zWlonS4RjMU0amcDGn0Gb26McJAZGOwPIZ4NLoIXmkJ9X4eP8R6n9tkGYPJ8AYs7ybkKoWe1f3wVGWdqsQWBs3Z_X86OE8J1llnQk8pugjMLZYHYx";
