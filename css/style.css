@@ -211,8 +211,9 @@ img {
 }
 
 .section__title {
-  font-size: 4rem;
   color: #3b4487;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
   margin-bottom: 2rem;
 }
 
@@ -293,19 +294,6 @@ img {
   font-size: 1.25rem;
   text-align: justify;
   margin-bottom: 1rem;
-}
-
-.guide__address {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #3b4487;
-  margin-bottom: 1rem;
-}
-
-.guide__address p:first-child {
-  color: #ac1c1c;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
 }
 
 .guide__rating-display {

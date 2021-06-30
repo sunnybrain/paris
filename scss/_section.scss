@@ -9,8 +9,9 @@
   }
 
   &__title {
-    font-size: 4rem;
     color: $color-primary;
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
 
     margin-bottom: 2rem;
   }
@@ -65,9 +66,6 @@ $size-guide: 350px;
     padding: 1em;
   }
 
-  &__text {
-  }
-
   &__name-box {
     margin-bottom: 1rem;
   }
@@ -89,20 +87,6 @@ $size-guide: 350px;
     font-size: 1.25rem;
     text-align: justify;
     margin-bottom: 1rem;
-  }
-
-  &__address {
-    font-size: 1.25rem;
-    font-weight: 700;
-
-    color: $color-primary;
-    margin-bottom: 1rem;
-
-    & p:first-child {
-      color: $color-secondary;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
   }
 
   &__rating-display {

@@ -2,35 +2,43 @@
 
 import { activities, sights, museums, food } from "../js/data.js";
 
-function checkPlaces(placesList) {
+function checkPlaces(placesList, sectionList) {
   placesList.businesses.forEach((business) => {
     if (!uniquePlacesNames.includes(business.name)) {
       uniquePlacesNames.push(business.name);
-      uniquePlacesList.push([
-        business.name,
-        business.id,
-        business.rating,
-        business.review_count,
-        business.categories[0].title,
-        business.image_url,
-        business.url,
-        business.location.address1,
-      ]);
+      uniquePlacesList.push({
+        name: business.name,
+        id: business.id,
+        rating: business.rating,
+        review_coutn: business.review_count,
+        title: business.categories[0].title,
+        image: business.image_url,
+        url: business.url,
+        address: business.location.address1,
+      });
+      sectionList.push({
+        name: business.name,
+        id: business.id,
+        rating: business.rating,
+        review_coutn: business.review_count,
+        title: business.categories[0].title,
+        image: business.image_url,
+        url: business.url,
+        address: business.location.address1,
+      });
     }
   });
+  sectionList = sectionList.sort((a, b) => b.rating - a.rating);
 }
 
 let uniquePlacesNames = [];
 let uniquePlacesList = [];
+let activitiesList = [];
+let sightsList = [];
+let museumsList = [];
+let foodList = [];
 
-checkPlaces(activities);
-checkPlaces(sights);
-checkPlaces(museums);
-checkPlaces(food);
-
-let museumsList = uniquePlacesList
-  .filter((place) => place[4] === "Museums")
-  .sort((a, b) => b[2] - a[2]);
-
-uniquePlacesList = uniquePlacesList.sort((a, b) => b[2] - a[2]);
-console.log(uniquePlacesList);
+checkPlaces(museums, museumsList);
+checkPlaces(sights, sightsList);
+checkPlaces(activities, activitiesList);
+checkPlaces(food, foodList);
