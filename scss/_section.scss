@@ -33,18 +33,22 @@ $size-guide: 350px;
   cursor: pointer;
 
   box-shadow: 0rem 0rem 0.625rem #888;
-  transition: box-shadow 0.3s ease-in, transform 0.4s;
+  transition: box-shadow 0.3s ease-in;
 
   position: relative;
 
   &:hover {
-    transform: scale(1.02);
     box-shadow: 0rem 0rem 1.25rem #888;
+
+    & .guide__image {
+      transform: scale(1.2);
+    }
   }
 
   &__image-box {
     width: 100%;
     height: $size-guide / 1.6;
+    overflow: hidden;
   }
 
   &__image {
@@ -53,6 +57,8 @@ $size-guide: 350px;
 
     object-fit: cover;
     object-position: bottom;
+
+    transition: transform 0.3s ease-in;
   }
 
   &__info {
@@ -66,22 +72,41 @@ $size-guide: 350px;
     margin-bottom: 1rem;
   }
 
-  &__title {
-    color: $color-primary;
-    font-size: 1.25rem;
-    font-weight: 500;
-
-    margin-bottom: 0.25rem;
-  }
-
   &__name {
     color: $color-secondary;
-    font-size: 1.5rem;
+    letter-spacing: 0.125rem;
+    font-size: 2rem;
+  }
 
-    margin-bottom: 0.5rem;
+  &__title {
+    color: $color-primary;
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 1.25rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  &__address {
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    color: $color-primary;
+    margin-bottom: 1rem;
+
+    & p:first-child {
+      color: $color-secondary;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
   }
 
   &__rating-display {
+    font-size: 1.25rem;
     margin-bottom: 1rem;
   }
 
@@ -89,6 +114,8 @@ $size-guide: 350px;
     display: flex;
     align-items: center;
 
+    color: $color-secondary;
+    font-weight: 700;
     margin-bottom: 0.5rem;
   }
 
@@ -99,16 +126,6 @@ $size-guide: 350px;
   &__reviews {
     color: $color-primary;
     font-weight: 700;
-  }
-
-  &__address {
-    color: #888;
-
-    & p:first-child {
-      color: $color-secondary;
-      font-weight: 500;
-      margin-bottom: 0.25rem;
-    }
   }
 }
 
