@@ -6,6 +6,8 @@
   padding: 2em;
 
   &__container {
+    padding: 2em 2em;
+    min-height: 50rem;
   }
 
   &__title {
@@ -21,13 +23,37 @@
 }
 
 .gallery {
-  display: flex;
+  position: relative;
+
+  &__button {
+    font-size: 2rem;
+    color: $color-primary;
+    background-color: inherit;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    cursor: pointer;
+    &--prev {
+      left: -5rem;
+    }
+    &--next {
+      right: -5rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: no-wrap;
+  }
 
   &__guide {
+    margin: 0 1rem;
   }
 }
 
-$size-guide: 350px;
+$size-guide: 302px;
 
 .guide {
   flex: 0 0 $size-guide;
@@ -85,11 +111,15 @@ $size-guide: 350px;
 
   &__description {
     font-size: 1.25rem;
+    text-indent: 1rem;
     text-align: justify;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
   }
 
   &__rating-display {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
@@ -114,3 +144,6 @@ $size-guide: 350px;
 }
 
 /* End of Sections  */
+
+.gallery {
+}

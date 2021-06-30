@@ -210,6 +210,11 @@ img {
   padding: 2em;
 }
 
+.section__container {
+  padding: 2em 2em;
+  min-height: 50rem;
+}
+
 .section__title {
   color: #3b4487;
   font-size: 4rem;
@@ -218,15 +223,47 @@ img {
 }
 
 .gallery {
+  position: relative;
+}
+
+.gallery__button {
+  font-size: 2rem;
+  color: #3b4487;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.gallery__button--prev {
+  left: -5rem;
+}
+
+.gallery__button--next {
+  right: -5rem;
+}
+
+.gallery__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: no-wrap;
+          flex-flow: no-wrap;
+}
+
+.gallery__guide {
+  margin: 0 1rem;
 }
 
 .guide {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 350px;
-          flex: 0 0 350px;
+      -ms-flex: 0 0 302px;
+          flex: 0 0 302px;
   cursor: pointer;
   -webkit-box-shadow: 0rem 0rem 0.625rem #888;
           box-shadow: 0rem 0rem 0.625rem #888;
@@ -251,7 +288,7 @@ img {
 
 .guide__image-box {
   width: 100%;
-  height: 218.75px;
+  height: 188.75px;
   overflow: hidden;
 }
 
@@ -292,11 +329,15 @@ img {
 
 .guide__description {
   font-size: 1.25rem;
+  text-indent: 1rem;
   text-align: justify;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .guide__rating-display {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
