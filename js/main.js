@@ -123,7 +123,22 @@ buttonSlideEvents("frenchFood");
 
 const submitButton = document.querySelector("#submit");
 const input = document.querySelector(".newsletter__input");
+const modal = document.querySelector("#modal");
 
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
+
+  modal.style.display = "flex";
+
+  if (input.validity.valid) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
 });
