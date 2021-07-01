@@ -83,7 +83,7 @@
           >
         </li>
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
+          <a href="#newsletter" class="sidebar__link"
             ><i class="fas fa-directions"></i>Guide Newsletter</a
           >
         </li>
@@ -214,11 +214,19 @@
             Paris guides.
           </p>
           <div class="newsletter__form-elements">
-            <input type="email" class="newsletter__input" />
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="Your email"
+            />
             <i class="fas fa-at newsletter__email-sign"></i>
             <button id="submit" class="newsletter__button" type="submit">
               Submit
             </button>
+            <p class="newsletter__alert">Please enter your email.</p>
+            <p class="newsletter__exclamation">
+              Please include "@" in email address.
+            </p>
 
             <div class="newsletter__modal modal" id="modal">
               <div class="modal__wrapper">
@@ -233,17 +241,6 @@
                       and we will keep you informed!
                     </p>
                     <i class="fas fa-check modal__sign"></i>
-                  </div>
-                </div>
-                <div class="modal__block modal--block-invalid">
-                  <div class="modal__title-box">
-                    <h4 class="modal__title">Invalid Email Address</h4>
-                  </div>
-                  <div class="modal__text-box">
-                    <p class="modal__text">
-                      Please, enter a valid email address
-                    </p>
-                    <i class="fas fa-exclamation modal__sign"></i>
                   </div>
                 </div>
               </div>

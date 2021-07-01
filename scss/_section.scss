@@ -7,7 +7,7 @@
 
   &__container {
     padding: 1em 1em 0em;
-    min-height: 45rem;
+    max-height: 45rem;
   }
 
   &__title {
@@ -78,8 +78,8 @@
 $size-guide: 302px;
 
 .guide {
-  flex: 0 0 23%;
-  min-height: 36rem;
+  flex: 0 0 31.3333%;
+  max-height: 36rem;
   cursor: pointer;
 
   box-shadow: 0rem 0rem 0.625rem #888;
@@ -106,7 +106,7 @@ $size-guide: 302px;
     height: 100%;
 
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
 
     transition: transform 0.3s ease-in;
   }

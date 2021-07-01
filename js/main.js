@@ -16,7 +16,7 @@ burgerBtn.addEventListener("click", () => {
 
 // Top Actitvites Section Data Added
 
-function dataAddedToSection(dataList, sectionId) {
+function dataAddedToSection(dataList, sectionId, imagePosition) {
   const dataSection = document.querySelector(`#${sectionId} .gallery__wrapper`);
 
   dataSection.innerHTML = "";
@@ -29,12 +29,17 @@ function dataAddedToSection(dataList, sectionId) {
       data.description = data.description.substring(0, 120) + "...";
     }
 
+    if (imagePosition == undefined) {
+      imagePosition = "bottom";
+    }
+
     dataBlock.innerHTML = `
     <div class="guide__image-box">
       <img
         src=${data.image}
         alt="guide image"
         class="guide__image"
+        style="object-position:${imagePosition};"
       />
     </div>
   
@@ -65,10 +70,10 @@ function dataAddedToSection(dataList, sectionId) {
   });
 }
 
-dataAddedToSection(activitiesList, "topActivities");
+dataAddedToSection(activitiesList, "topActivities", "center");
 dataAddedToSection(sightsList, "topSights");
-dataAddedToSection(museumsList, "topMuseums");
-dataAddedToSection(foodList, "frenchFood");
+dataAddedToSection(museumsList, "topMuseums", "center");
+dataAddedToSection(foodList, "frenchFood", "center");
 
 // Next and Prev Buttons
 
@@ -85,7 +90,7 @@ function buttonSlideEvents(sectionId) {
   const slides = Array.from(galleryWrapper.children);
   let slidesNumber = slides.length;
 
-  const slideWidth = galleryWrapper.getBoundingClientRect().width / 4;
+  const slideWidth = galleryWrapper.getBoundingClientRect().width / 3;
 
   let slideCount = 0;
 
@@ -94,7 +99,7 @@ function buttonSlideEvents(sectionId) {
     slides.forEach((slide) => {
       slide.style.transform = `translateX(-${slideWidth * slideCount}px)`;
     });
-    if (slideCount === slidesNumber - 4) {
+    if (slideCount === slidesNumber - 3) {
       nextButton.style.display = "none";
     } else if (slideCount > 0) {
       prevButton.style.display = "block";
@@ -108,7 +113,7 @@ function buttonSlideEvents(sectionId) {
     });
     if (slideCount === 0) {
       prevButton.style.display = "none";
-    } else if (slideCount < slidesNumber - 4) {
+    } else if (slideCount < slidesNumber - 3) {
       nextButton.style.display = "block";
     }
   });
@@ -124,16 +129,16 @@ buttonSlideEvents("frenchFood");
 const submitButton = document.querySelector("#submit");
 const input = document.querySelector(".newsletter__input");
 const modal = document.querySelector("#modal");
+const newsletterAlert = document.querySelector(".newsletter__alert");
 
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
 
-  modal.style.display = "flex";
-
-  if (input.validity.valid) {
-    console.log("true");
-  } else {
-    console.log("false");
+  if (input.validity.valid && input.value != "") {
+    modal.style.display = "flex";
+    newsletterAlert.style.opacity = "0";
+  } else if (input.value === "") {
+    newsletterAlert.style.opacity = "1";
   }
 });
 

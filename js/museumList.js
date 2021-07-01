@@ -41,7 +41,7 @@ export let museumsList = [
       "What a wonderful spot on the earth! Beautiful palace converted to one of the largest art exhibits of fine art in the world. Nothing not to love except the basics with selfie sticks doing goat head selfies with the micro-Mona Lisa.",
   },
   {
-    name: "Opéra National de Paris - Palais Garnier",
+    name: "Opéra National",
     id: "2U00N6efcaeHQuzyWVzKdQ",
     rating: 4.5,
     review_coutn: 237,
@@ -80,7 +80,7 @@ export let museumsList = [
       "Amazing sculptures decorate this structure.  I didn't go to the top due to poor planning and long ticket lines.  I was perfectly happy walking around the building looking at the amazing sculptures. This structure sits in the middle of a crazy roundabout but there are staircases that descend into tunnels below the street to avoid the cars and traffic.  Five stars!",
   },
   {
-    name: "Basilique du Sacré-Cœur de Montmartre",
+    name: "Basilique  de Montmartre",
     id: "spIGAtquYQ0S7xai5eJSuA",
     rating: 4.5,
     review_coutn: 582,
