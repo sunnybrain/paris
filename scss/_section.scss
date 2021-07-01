@@ -26,17 +26,29 @@
   position: relative;
 
   &__button {
-    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 0.5rem #888;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: $color-primary;
     background-color: inherit;
 
     position: absolute;
     top: 50%;
 
+    font-size: 2rem;
     transform: translateY(-50%);
     cursor: pointer;
+
     &--prev {
       left: -5rem;
+      display: none;
     }
     &--next {
       right: -5rem;
@@ -46,21 +58,26 @@
   &__wrapper {
     display: flex;
     flex-flow: no-wrap;
+
+    padding: 1em 0em;
+    overflow: hidden;
   }
 
   &__guide {
-    margin: 0 1rem;
+    margin: 0 1%;
+    // left: -334px;
   }
 }
 
 $size-guide: 302px;
 
 .guide {
-  flex: 0 0 $size-guide;
+  flex: 0 0 23%;
+  min-height: 36rem;
   cursor: pointer;
 
   box-shadow: 0rem 0rem 0.625rem #888;
-  transition: box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out;
 
   position: relative;
 
@@ -110,6 +127,7 @@ $size-guide: 302px;
   }
 
   &__description {
+    color: #555;
     font-size: 1.25rem;
     text-indent: 1rem;
     text-align: justify;

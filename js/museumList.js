@@ -102,7 +102,7 @@ export let museumsList = [
       "https://s3-media4.fl.yelpcdn.com/bphoto/arGkGfuUvqPHQpcxR-9jZQ/o.jpg",
     url: "https://www.yelp.com/biz/mus%C3%A9e-rodin-paris-3?adjust_creative=DTtLSFbl_eDBDPgEF5M4MA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=DTtLSFbl_eDBDPgEF5M4MA",
     address: "77 rue de Varenne",
-    description: "",
+    description: `"The artist must create a spark before he can make a fire and before art is born, the artist must be ready to be consumed by the fire of his own creation." - A. RODIN`,
   },
   {
     name: "Centre Pompidou",

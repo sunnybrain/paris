@@ -227,11 +227,25 @@ img {
 }
 
 .gallery__button {
-  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0rem 0rem 0.5rem #888;
+          box-shadow: 0rem 0rem 0.5rem #888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #3b4487;
   background-color: inherit;
   position: absolute;
   top: 50%;
+  font-size: 2rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -240,6 +254,7 @@ img {
 
 .gallery__button--prev {
   left: -5rem;
+  display: none;
 }
 
 .gallery__button--next {
@@ -254,24 +269,27 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: no-wrap;
           flex-flow: no-wrap;
+  padding: 1em 0em;
+  overflow: hidden;
 }
 
 .gallery__guide {
-  margin: 0 1rem;
+  margin: 0 1%;
 }
 
 .guide {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 302px;
-          flex: 0 0 302px;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  min-height: 36rem;
   cursor: pointer;
   -webkit-box-shadow: 0rem 0rem 0.625rem #888;
           box-shadow: 0rem 0rem 0.625rem #888;
-  -webkit-transition: -webkit-box-shadow 0.3s ease-in;
-  transition: -webkit-box-shadow 0.3s ease-in;
-  -o-transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in;
-  transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.4s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out;
+  transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out;
+  transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out, -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.4s ease-in-out;
   position: relative;
 }
 
@@ -328,6 +346,7 @@ img {
 }
 
 .guide__description {
+  color: #555;
   font-size: 1.25rem;
   text-indent: 1rem;
   text-align: justify;

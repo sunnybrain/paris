@@ -16,52 +16,105 @@ burgerBtn.addEventListener("click", () => {
 
 // Top Actitvites Section Data Added
 
-const activitiesSection = document.querySelector(
-  "#topActivities .gallery__wrapper"
-);
-console.log(activitiesSection);
+function dataAddedToSection(dataList, sectionId) {
+  const dataSection = document.querySelector(`#${sectionId} .gallery__wrapper`);
 
-activitiesSection.innerHTML = "";
+  dataSection.innerHTML = "";
 
-activitiesList.forEach((activity) => {
-  let activityBlock = document.createElement("div");
-  activityBlock.classList.add("gallery__guide", "guide");
+  dataList.forEach((data) => {
+    let dataBlock = document.createElement("div");
+    dataBlock.classList.add("gallery__guide", "guide");
 
-  if (activity.description.length > 50) {
-    activity.description = activity.description.substring(0, 120) + "...";
-  }
+    if (data.description.length > 50) {
+      data.description = data.description.substring(0, 120) + "...";
+    }
 
-  activityBlock.innerHTML = `
-  <div class="guide__image-box">
-    <img
-      src=${activity.image}
-      alt="guide image"
-      class="guide__image"
-    />
-  </div>
-
-  <div class="guide__info">
-    <div class="guide__name-box">
-      <h4 class="guide__name">${activity.name}</h4>
-      <p class="guide__title">${activity.title}</p>
-    </div>
-
-    <p class="guide__description">
-      ${activity.description}
-    </p>
-
-  <div class="guide__rating-display">
-    <div class="guide__rating">
+    dataBlock.innerHTML = `
+    <div class="guide__image-box">
       <img
-        src="images/regular/${activity.rating}.png"
-        alt="rating stars"
-        class="guide__rating-stars"
+        src=${data.image}
+        alt="guide image"
+        class="guide__image"
       />
-      <span>${activity.rating}</span>
     </div>
-    <p class="guide__reviews">Based on ${activity.review_coutn} reviews</p>
-  </div>
-</div>`;
+  
+    <div class="guide__info">
+      <div class="guide__name-box">
+        <h4 class="guide__name">${data.name}</h4>
+        <p class="guide__title">${data.title}</p>
+      </div>
+  
+      <p class="guide__description">
+        ${data.description}
+      </p>
+  
+    <div class="guide__rating-display">
+      <div class="guide__rating">
+        <img
+          src="images/regular/${data.rating}.png"
+          alt="rating stars"
+          class="guide__rating-stars"
+        />
+        <span>${data.rating}</span>
+      </div>
+      <p class="guide__reviews">Based on ${data.review_coutn} reviews</p>
+    </div>
+  </div>`;
 
-  activitiesSection.appendChild(activityBlock);
-});
+    dataSection.appendChild(dataBlock);
+  });
+}
+
+dataAddedToSection(activitiesList, "topActivities");
+dataAddedToSection(sightsList, "topSights");
+dataAddedToSection(museumsList, "topMuseums");
+dataAddedToSection(foodList, "frenchFood");
+
+// Next and Prev Buttons
+
+function buttonSlideEvents(sectionId) {
+  const nextButton = document.querySelector(
+    `#${sectionId} .gallery__button--next`
+  );
+  const prevButton = document.querySelector(
+    `#${sectionId} .gallery__button--prev`
+  );
+  const galleryWrapper = document.querySelector(
+    `#${sectionId} .gallery__wrapper`
+  );
+  const slides = Array.from(galleryWrapper.children);
+  let slidesNumber = slides.length;
+
+  const slideWidth = galleryWrapper.getBoundingClientRect().width / 4;
+
+  let slideCount = 0;
+
+  nextButton.addEventListener("click", () => {
+    slideCount++;
+    slides.forEach((slide) => {
+      slide.style.transform = `translateX(-${slideWidth * slideCount}px)`;
+    });
+    if (slideCount === slidesNumber - 4) {
+      nextButton.style.display = "none";
+    } else if (slideCount > 0) {
+      prevButton.style.display = "block";
+    }
+  });
+
+  prevButton.addEventListener("click", () => {
+    slideCount--;
+    slides.forEach((slide) => {
+      slide.style.transform = `translateX(-${slideWidth * slideCount}px)`;
+    });
+    if (slideCount === 0) {
+      prevButton.style.display = "none";
+    } else if (slideCount < slidesNumber - 4) {
+      nextButton.style.display = "block";
+    }
+  });
+}
+
+buttonSlideEvents("topActivities");
+buttonSlideEvents("topSights");
+buttonSlideEvents("topMuseums");
+buttonSlideEvents("frenchFood");
