@@ -205,13 +205,21 @@
           />
         </div>
         <form class="newsletter__form">
-          <h4 class="newsletter__title">Your Paris Guide is waiting for You</h4>
+          <h4 class="newsletter__title">
+            Your <span>Paris</span> Guide <br />
+            is waiting for <span>You</span>!
+          </h4>
           <p class="newsletter__text">
             Receive relevant information about the most exciting and popular
             Paris guides.
-            <input type="email" class="newsletter__input" />
-            <button class="newsletter__button" type="submit">Submit</button>
           </p>
+          <div class="newsletter__form-elements">
+            <input type="email" class="newsletter__input" />
+            <i class="fas fa-at newsletter__email-sign"></i>
+            <button id="submit" class="newsletter__button" type="submit">
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </section>

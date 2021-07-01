@@ -4,9 +4,13 @@
   position: relative;
   top: $height-nav;
 
-  padding: 4em;
+  padding: 6em;
+
   &__container {
+    max-height: 30rem;
     display: flex;
+
+    box-shadow: 0rem 0rem 1.25rem #888;
   }
 
   &__image-box {
@@ -14,24 +18,100 @@
   }
 
   &__image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: bottom;
   }
 
   &__form {
     flex: 1 1 50%;
 
-    background-color: $color-primary-shade2;
+    background-color: #889aee;
+    padding: 4em;
   }
 
   &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3rem;
   }
 
   &__text {
+    color: #fff;
+    font-size: 1.875rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  &__form-elements {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
   }
 
   &__input {
+    width: 25rem;
+    height: 3rem;
+    border: 4px solid #eee;
+    color: $color-primary;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    letter-spacing: 0.0625rem;
+
+    transition: border 0.3s;
+
+    padding: 0.25em 0.5em;
+    margin-right: 2rem;
+
+    &:focus {
+      outline: none;
+      border: 4px solid $color-secondary;
+    }
+
+    &:valid {
+      border: 4px solid green;
+    }
+  }
+
+  &__email-sign {
+    position: absolute;
+    left: 22.75rem;
+
+    font-size: 1.5rem;
+    color: $color-primary-shade2;
   }
 
   &__button {
+    height: 3rem;
+    color: #fff;
+    background-color: #00ad00;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5em 2em;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: green;
+    }
   }
 }
 

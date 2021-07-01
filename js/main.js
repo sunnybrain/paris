@@ -118,3 +118,12 @@ buttonSlideEvents("topActivities");
 buttonSlideEvents("topSights");
 buttonSlideEvents("topMuseums");
 buttonSlideEvents("frenchFood");
+
+/* Submit Button */
+
+const submitButton = document.querySelector("#submit");
+const input = document.querySelector(".newsletter__input");
+
+submitButton.addEventListener("click", (e) => {
+  e.preventDefault();
+});
