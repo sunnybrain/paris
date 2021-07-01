@@ -55,34 +55,36 @@
 
     <!-- SideBar -->
 
-    <div class="sidebar">
+    <nav class="sidebar">
       <ul class="sidebar__list">
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"><i class="fas fa-home"></i>Home</a>
+          <a href="#banner" class="sidebar__link"
+            ><i class="fas fa-home"></i>Home</a
+          >
         </li>
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
+          <a href="#topActivities" class="sidebar__link"
             ><i class="fas fa-walking"></i>Top Activities</a
           >
         </li>
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
+          <a href="#topSights" class="sidebar__link"
             ><i class="fas fa-archway"></i>Top Sights</a
           >
         </li>
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
+          <a href="#topMuseums" class="sidebar__link"
             ><i class="fas fa-university"></i>Museums & More</a
           >
         </li>
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
+          <a href="#frenchFood" class="sidebar__link"
             ><i class="fas fa-utensils"></i>French Food</a
           >
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link"
-            ><i class="fas fa-directions"></i>Guide Form</a
+            ><i class="fas fa-directions"></i>Guide Newsletter</a
           >
         </li>
         <li class="sidebar__item">
@@ -106,11 +108,11 @@
           >
         </li>
       </ul>
-    </div>
+    </nav>
 
     <!-- Banner -->
 
-    <section class="banner">
+    <section class="banner" id="banner">
       <div class="banner__container container">
         <div class="banner__txt-content">
           <h3 class="banner__subtitle">Things to do in</h3>
@@ -190,6 +192,27 @@
             <i class="fas fa-arrow-right"></i>
           </button>
         </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter__container container">
+        <div class="newsletter__image-box">
+          <img
+            src="images/guide.jpg"
+            alt="paris street and eiffel tower"
+            class="newsletter__image"
+          />
+        </div>
+        <form class="newsletter__form">
+          <h4 class="newsletter__title">Your Paris Guide is waiting for You</h4>
+          <p class="newsletter__text">
+            Receive relevant information about the most exciting and popular
+            Paris guides.
+            <input type="email" class="newsletter__input" />
+            <button class="newsletter__button" type="submit">Submit</button>
+          </p>
+        </form>
       </div>
     </section>
 

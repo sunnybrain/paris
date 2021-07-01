@@ -1,0 +1,38 @@
+/* Newsletter Section */
+
+.newsletter {
+  position: relative;
+  top: $height-nav;
+
+  padding: 4em;
+  &__container {
+    display: flex;
+  }
+
+  &__image-box {
+    flex: 1 1 50%;
+  }
+
+  &__image {
+  }
+
+  &__form {
+    flex: 1 1 50%;
+
+    background-color: $color-primary-shade2;
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__input {
+  }
+
+  &__button {
+  }
+}
+
+/* End of  Newsletter Section */

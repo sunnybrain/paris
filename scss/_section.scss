@@ -3,19 +3,25 @@
   position: relative;
   top: $height-nav;
 
-  padding: 2em;
+  padding: 6em 2em 0em;
 
   &__container {
-    padding: 2em 2em;
-    min-height: 50rem;
+    padding: 1em 1em 0em;
+    min-height: 45rem;
   }
 
   &__title {
     color: $color-primary;
     font-size: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem #888;
     letter-spacing: 0.25rem;
 
     margin-bottom: 2rem;
+
+    #topSights &,
+    #frenchFood & {
+      color: $color-secondary;
+    }
   }
 
   &__gallery {
@@ -100,7 +106,7 @@ $size-guide: 302px;
     height: 100%;
 
     object-fit: cover;
-    object-position: bottom;
+    object-position: top;
 
     transition: transform 0.3s ease-in;
   }
@@ -162,6 +168,3 @@ $size-guide: 302px;
 }
 
 /* End of Sections  */
-
-.gallery {
-}

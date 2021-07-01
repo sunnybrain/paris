@@ -4,6 +4,10 @@
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -124,12 +128,12 @@ img {
   top: 6rem;
   left: -31rem;
   width: 30rem;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 6rem);
   min-height: 45rem;
   background-color: #fff;
   border-right: 1px solid #717bc1;
-  -webkit-box-shadow: 0.1rem 0.1rem 0.625rem #9aade4;
-          box-shadow: 0.1rem 0.1rem 0.625rem #9aade4;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.625rem #888;
+          box-shadow: 0.2rem 0.2rem 0.625rem #888;
   z-index: 10;
   -webkit-transition: left 0.6s;
   -o-transition: left 0.6s;
@@ -138,6 +142,20 @@ img {
 
 .sidebar--opened {
   left: 0rem;
+}
+
+.sidebar__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .sidebar__item {
@@ -207,19 +225,25 @@ img {
 .section {
   position: relative;
   top: 6rem;
-  padding: 2em;
+  padding: 6em 2em 0em;
 }
 
 .section__container {
-  padding: 2em 2em;
-  min-height: 50rem;
+  padding: 1em 1em 0em;
+  min-height: 45rem;
 }
 
 .section__title {
   color: #3b4487;
   font-size: 4rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #888;
   letter-spacing: 0.25rem;
   margin-bottom: 2rem;
+}
+
+#topSights .section__title,
+#frenchFood .section__title {
+  color: #ac1c1c;
 }
 
 .gallery {
@@ -315,8 +339,8 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  -o-object-position: top;
+     object-position: top;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
   -o-transition: transform 0.3s ease-in;
@@ -383,3 +407,30 @@ img {
 }
 
 /* End of Sections  */
+/* Newsletter Section */
+.newsletter {
+  position: relative;
+  top: 6rem;
+  padding: 4em;
+}
+
+.newsletter__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.newsletter__image-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.newsletter__form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  background-color: #9aade4;
+}
+
+/* End of  Newsletter Section */
