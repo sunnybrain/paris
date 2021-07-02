@@ -142,15 +142,43 @@
     letter-spacing: 0.125rem;
     color: #96281b;
 
-    // display: none;
     opacity: 0;
     transition: opacity 0.3s;
   }
 
   &__exclamation {
     position: absolute;
-    top: 8rem;
-    display: none;
+    top: 4.625rem;
+
+    min-height: 2rem;
+    background-color: #fff;
+    border: 1px solid orange;
+    box-shadow: 0.25em 0.25rem 0.5rem #555;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.25rem;
+
+    padding: 0.5em 1em;
+
+    & i {
+      font-size: 1.25rem;
+      color: orange;
+
+      margin-right: 0.5rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -0.75rem;
+      left: 4rem;
+      border-top: 0;
+      border-left: 0.75rem solid transparent;
+      border-right: 0.75rem solid transparent;
+      border-bottom: 0.75rem solid #fff;
+    }
   }
 
   &__modal {
@@ -188,45 +216,53 @@
     height: 100%;
   }
 
-  &__title-box {
+  &__sign-box {
     width: 100%;
-    height: 40%;
+    height: 45%;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 4rem;
   }
 
-  &__title {
-    font-size: 3rem;
+  &__sign {
+    color: #fff;
+    font-size: 8rem;
     letter-spacing: 0.125rem;
-    text-transform: uppercase;
+    text-align: center;
   }
 
   &__text-box {
     width: 100%;
-    height: 60%;
+    height: 55%;
 
     color: $color-primary;
     background-color: #fff;
 
     display: flex;
+    flex-flow: column;
     align-items: center;
-    justify-content: space-between;
 
-    padding: 0 4em;
+    padding: 2em 4em;
+  }
+
+  &__text-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+
+    margin-bottom: 1rem;
   }
 
   &__text {
-    font-size: 1.5rem;
+    color: #535cac;
+    font-size: 1.375rem;
     font-weight: 500;
     line-height: 1.5;
-    text-align: left;
-  }
-
-  &__sign {
-    font-size: 2.5rem;
-    color: #00ad00;
+    text-align: center;
   }
 }
 

@@ -90,7 +90,11 @@ function buttonSlideEvents(sectionId) {
   const slides = Array.from(galleryWrapper.children);
   let slidesNumber = slides.length;
 
-  const slideWidth = galleryWrapper.getBoundingClientRect().width / 3;
+  let slideWidth = galleryWrapper.getBoundingClientRect().width / 3;
+
+  window.addEventListener("resize", () => {
+    slideWidth = galleryWrapper.getBoundingClientRect().width / 3;
+  });
 
   let slideCount = 0;
 
@@ -137,7 +141,7 @@ submitButton.addEventListener("click", (e) => {
   if (input.validity.valid && input.value != "") {
     modal.style.display = "flex";
     newsletterAlert.style.opacity = "0";
-  } else if (input.value === "") {
+  } else if (input.value === "" || input.validity.valid === false) {
     newsletterAlert.style.opacity = "1";
   }
 });
