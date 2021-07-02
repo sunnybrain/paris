@@ -9,8 +9,6 @@
   position: relative;
   top: $height-nav;
 
-  // perspective: 20rem;
-
   &__container {
     color: $color-secondary;
   }
@@ -26,6 +24,7 @@
 
   &__subtitle {
     font-size: 3rem;
+    font-weight: 400;
     color: $color-primary;
 
     & span {

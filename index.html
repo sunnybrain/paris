@@ -18,28 +18,28 @@
   <body>
     <!-- NavBar -->
 
-    <div class="button-container">
-      <button
-        class="menu"
-        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-        aria-label="Main Menu"
-      >
-        <svg width="50" height="50" viewbox="0 0 100 100">
-          <path
-            class="line line1"
-            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-          />
-          <path class="line line2" d="M 20,50 H 80" />
-          <path
-            class="line line3"
-            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-          />
-        </svg>
-      </button>
-    </div>
-
     <nav class="nav">
       <div class="nav__container container">
+        <div class="nav__button button-container">
+          <button
+            class="menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu"
+          >
+            <svg width="50" height="50" viewbox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+        </div>
+
         <div class="nav__header">
           <div class="nav__logo-box">
             <img src="images/logo.png" alt="logo" class="nav__logo" />
@@ -58,9 +58,7 @@
     <nav class="sidebar">
       <ul class="sidebar__list">
         <li class="sidebar__item">
-          <a href="#banner" class="sidebar__link"
-            ><i class="fas fa-home"></i>Home</a
-          >
+          <a href="#" class="sidebar__link"><i class="fas fa-home"></i>Home</a>
         </li>
         <li class="sidebar__item">
           <a href="#topActivities" class="sidebar__link"
@@ -252,7 +250,9 @@
 
     <section class="art-column" id="mustSee">
       <div class="art-column__container container">
-        <h3 class="art-column__title">10 Things You Must See in Paris</h3>
+        <h3 class="art-column__title">
+          10 Things You Must See in <span>Paris</span>
+        </h3>
         <div class="art-column__wrapper">
           <article class="art-column__article article">
             <div class="article__image-box">
@@ -265,9 +265,11 @@
             <div class="article__text-box">
               <h4 class="article__title">1. Eiffel Tower</h4>
               <p class="article__text">
-                Come and discover the Eiffel Tower on the only trip to the top
-                of its kind in Europe, and let pure emotions carry you from the
-                esplanade to the top.
+                Come and discover the <span>Eiffel Tower</span> on the only trip
+                to the top of its kind in Europe, and let pure emotions carry
+                you from the esplanade to the top.History, key figures, lights,
+                paintings, explore all the secrets of the world's most iconic
+                monument
               </p>
             </div>
           </article>
@@ -286,8 +288,8 @@
               <p class="article__text">
                 It flows northwesterly, curving through Paris, to the Normandy
                 coast, where it empties into the English Channel. The most
-                important river in northern France, the Seine has been the hub
-                of Paris, and of France, since the Middle Ages.
+                important river in northern France, the <span>Seine</span> has
+                been the hub of Paris, and of France, since the Middle Ages.
               </p>
             </div>
           </article>
@@ -306,7 +308,8 @@
               <p class="article__text">
                 There are plenty of good reasons to visit the Louvre! So many
                 works of art to discover in this fabulous museum that used to be
-                a palace! So plan your visit in advance to make the most of it.
+                a palace! So <span>plan your visit</span> in advance to make the
+                most of it.
               </p>
             </div>
           </article>
@@ -314,7 +317,7 @@
           <article class="art-column__article article">
             <div class="article__image-box">
               <img
-                src="images/articles/monaLisa.jpg"
+                src="images/articles/moulinRouge.jpg"
                 alt="eiffel tower"
                 class="article__image"
                 style="object-position: center"
@@ -323,9 +326,136 @@
             <div class="article__text-box">
               <h4 class="article__title">4. Moulin Rouge</h4>
               <p class="article__text">
-                There are plenty of good reasons to visit the Louvre! So many
-                works of art to discover in this fabulous museum that used to be
-                a palace! So plan your visit in advance to make the most of it.
+                Experience an evening of iconic glamour with a late-night show
+                at the <span>Moulin Rouge</span>, the legendary home of Parisian
+                cabaret! See talented troupes of colorful showgirls and expert
+                dancers strut their stuff on the historical stage of the Moulin
+                Rouge.
+              </p>
+            </div>
+          </article>
+
+          <article class="art-column__article article">
+            <div class="article__image-box">
+              <img
+                src="images/articles/versailles.jpg"
+                alt="eiffel tower"
+                class="article__image"
+                style="object-position: center"
+              />
+            </div>
+            <div class="article__text-box">
+              <h4 class="article__title">5. Palace de Versailles</h4>
+              <p class="article__text">
+                <span>The Palace of Versailles</span>, whose origins date back
+                to the seventeenth century, was successively a hunting lodge, a
+                ​seat of power and​,​ from the nineteenth century​,​ a museum.
+                With the gardens and the ​​Palaces of Trianon, the park of the
+                Château de Versailles spreads over 800 hectares.
+              </p>
+            </div>
+          </article>
+
+          <article class="art-column__article article">
+            <div class="article__image-box">
+              <img
+                src="images/articles/disneylandParis.jpg"
+                alt="eiffel tower"
+                class="article__image"
+                style="object-position: center"
+              />
+            </div>
+            <div class="article__text-box">
+              <h4 class="article__title">6.DisneyLand in Paris</h4>
+              <p class="article__text">
+                Be transported to a world that inspires the imagination, where
+                wonder and enchantment fill the air all year round. With
+                Sleeping Beauty Castle at the heart of this fairy-tale setting,
+                the attractions, shows, parades and restaurants will immerse you
+                in <span>the Disney magic</span> you know and love.
+              </p>
+            </div>
+          </article>
+
+          <article class="art-column__article article">
+            <div class="article__image-box">
+              <img
+                src="images/articles/catacombsParis.jpg"
+                alt="eiffel tower"
+                class="article__image"
+                style="object-position: center"
+              />
+            </div>
+            <div class="article__text-box">
+              <h4 class="article__title">7. Catacombs in Paris</h4>
+              <p class="article__text">
+                The history of the <span>Paris Catacombs</span> starts in the
+                late eighteenth century, when major public health problems tied
+                to the city’s cemeteries led to a decision to transfer their
+                contents to an underground site.
+              </p>
+            </div>
+          </article>
+
+          <article class="art-column__article article">
+            <div class="article__image-box">
+              <img
+                src="images/articles/notreDame.jpg"
+                alt="eiffel tower"
+                class="article__image"
+                style="object-position: center"
+              />
+            </div>
+            <div class="article__text-box">
+              <h4 class="article__title">8. Notre Dame Cathedral</h4>
+              <p class="article__text">
+                <span>The Notre Dame Cathedral</span> with its sculptures and
+                stained glass windows show the heavy influence of naturalism,
+                unlike that of earlier Romanesque architecture. It was one of
+                the very first Gothic cathedrals, and its construction took
+                place throughout the Gothic period.
+              </p>
+            </div>
+          </article>
+
+          <article class="art-column__article article">
+            <div class="article__image-box">
+              <img
+                src="images/articles/champsÉlysées.jpg"
+                alt="eiffel tower"
+                class="article__image"
+                style="object-position: center"
+              />
+            </div>
+            <div class="article__text-box">
+              <h4 class="article__title">9. Champs-Élysées</h4>
+              <p class="article__text">
+                The origins of <span>the Champs-Élysées</span> can be traced to
+                1640 when space was cleared to plant a line of trees, which
+                would later become an avenue. The name translates to “Elysian
+                Fields” from the Greek mythology, meaning resting place of Greek
+                gods and dead heroes, similar to the Christian paradise.
+              </p>
+            </div>
+          </article>
+
+          <article class="art-column__article article">
+            <div class="article__image-box">
+              <img
+                src="images/articles/arcDeTriomphe.jpg"
+                alt="eiffel tower"
+                class="article__image"
+                style="object-position: center"
+              />
+            </div>
+            <div class="article__text-box">
+              <h4 class="article__title">10. Arc de Triomphe</h4>
+              <p class="article__text">
+                Wanted by Napoleon in 1806, <span>the Arc de Triomphe</span> was
+                inaugurated in 1836 by French king, Louis-Philippe, who
+                dedicated it to the armies of the Revolution and the Empire. The
+                Unknown Soldier was buried at the base of the arch in 1921. The
+                flame of remembrance is rekindled every day at 18:30.
               </p>
             </div>
           </article>

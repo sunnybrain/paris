@@ -4,6 +4,8 @@
   position: relative;
   top: $height-nav;
 
+  padding: 8rem 0rem 2em;
+
   &__container {
   }
 
@@ -14,7 +16,11 @@
     letter-spacing: 0.25rem;
     text-align: center;
 
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+
+    & span {
+      color: $color-secondary;
+    }
   }
 
   &__wrapper {
@@ -30,8 +36,26 @@
 .article {
   flex: 1 1 45%;
 
+  box-shadow: 0rem 0rem 0.625rem #888;
+  padding: 2em;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0rem 0rem 1.25rem #888;
+
+    & .article__image {
+      transform: scale(1.1);
+    }
+  }
+
   &__image-box {
     width: 100%;
+
+    overflow: hidden;
+
+    margin-bottom: 2rem;
   }
 
   &__image {
@@ -39,15 +63,43 @@
     max-height: 20rem;
     object-fit: cover;
     object-position: bottom;
+
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
   }
 
   &__text-box {
+    line-height: 1.5;
   }
 
   &__title {
+    color: #002290;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #1e90ff;
+    }
   }
 
   &__text {
+    color: #555;
+    font-size: 1.125rem;
+
+    & span {
+      color: $color-secondary;
+      font-weight: 700;
+
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

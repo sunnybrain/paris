@@ -40,6 +40,15 @@ button:focus {
   outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
@@ -48,9 +57,9 @@ button:focus {
 /* Modules */
 /* Navbar Section */
 .button-container {
-  position: fixed;
+  position: absolute;
   top: 3rem;
-  left: 1rem;
+  left: 0rem;
   z-index: 30;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -114,14 +123,14 @@ button:focus {
 }
 
 .nav__title {
-  color: #ac1c1c;
+  color: #e62837;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .nav__subtitle {
-  color: #3b4487;
+  color: #002290;
   font-size: 2rem;
 }
 
@@ -134,10 +143,7 @@ button:focus {
   width: 30rem;
   height: calc(100vh - 6rem);
   min-height: 45rem;
-  background-color: #fff;
-  border-right: 1px solid #717bc1;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.625rem #888;
-          box-shadow: 0.2rem 0.2rem 0.625rem #888;
+  background-color: #f8f8f8;
   z-index: 10;
   -webkit-transition: left 0.6s;
   -o-transition: left 0.6s;
@@ -157,13 +163,17 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
 .sidebar__item {
-  padding: 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1.5rem 4rem;
   position: relative;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -178,13 +188,13 @@ button:focus {
 }
 
 .sidebar__item:hover a {
-  color: #ac1c1c;
+  color: #e62837;
 }
 
 .sidebar__link {
-  color: #3b4487;
-  font-size: 2rem;
-  font-weight: 500;
+  color: #002290;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 /* End of Sidebar Section */
@@ -199,7 +209,7 @@ button:focus {
 }
 
 .banner__container {
-  color: #ac1c1c;
+  color: #e62837;
 }
 
 .banner__txt-content {
@@ -213,11 +223,12 @@ button:focus {
 
 .banner__subtitle {
   font-size: 3rem;
-  color: #3b4487;
+  font-weight: 400;
+  color: #002290;
 }
 
 .banner__subtitle span {
-  color: #ac1c1c;
+  color: #e62837;
 }
 
 .banner__title {
@@ -229,7 +240,7 @@ button:focus {
 .section {
   position: relative;
   top: 6rem;
-  padding: 6em 2em 0em;
+  padding: 8em 0em 0em;
 }
 
 .section__container {
@@ -238,9 +249,9 @@ button:focus {
 }
 
 .section__title {
-  color: #3b4487;
-  font-size: 4rem;
-  text-shadow: 0.1rem 0.1rem 0.2rem #888;
+  color: #002290;
+  font-size: 3rem;
+  font-weight: 500;
   letter-spacing: 0.25rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -248,7 +259,7 @@ button:focus {
 
 #topSights .section__title,
 #frenchFood .section__title {
-  color: #ac1c1c;
+  color: #e62837;
 }
 
 .gallery {
@@ -271,7 +282,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #3b4487;
+  color: #002290;
   background-color: inherit;
   position: absolute;
   top: 50%;
@@ -299,18 +310,18 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-flow: no-wrap;
           flex-flow: no-wrap;
-  padding: 1em 0em;
+  padding: 3em 0em 2em;
   overflow: hidden;
 }
 
 .gallery__guide {
-  margin: 0 1%;
+  margin: 0 1.5%;
 }
 
 .guide {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 31.3333%;
-          flex: 0 0 31.3333%;
+      -ms-flex: 0 0 30.3333%;
+          flex: 0 0 30.3333%;
   max-height: 36rem;
   cursor: pointer;
   -webkit-box-shadow: 0rem 0rem 0.625rem #888;
@@ -324,6 +335,9 @@ button:focus {
 }
 
 .guide:hover {
+  -webkit-transform: translateY(-1rem);
+      -ms-transform: translateY(-1rem);
+          transform: translateY(-1rem);
   -webkit-box-shadow: 0rem 0rem 1.25rem #888;
           box-shadow: 0rem 0rem 1.25rem #888;
 }
@@ -363,16 +377,18 @@ button:focus {
 }
 
 .guide__name {
-  color: #ac1c1c;
-  letter-spacing: 0.125rem;
-  font-size: 2rem;
-}
-
-.guide__title {
-  color: #3b4487;
+  color: #e62837;
   letter-spacing: 0.125rem;
   font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.guide__title {
+  color: #002290;
+  letter-spacing: 0.125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .guide__description {
@@ -398,7 +414,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ac1c1c;
+  color: #e62837;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -408,8 +424,8 @@ button:focus {
 }
 
 .guide__reviews {
-  color: #3b4487;
-  font-weight: 700;
+  color: #002290;
+  font-weight: 500;
 }
 
 /* End of Sections  */
@@ -417,7 +433,7 @@ button:focus {
 .newsletter {
   position: relative;
   top: 6rem;
-  padding: 6em;
+  padding: 8em 0em 0em;
 }
 
 .newsletter__container {
@@ -471,21 +487,21 @@ button:focus {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   background-color: #889aee;
-  padding: 4em;
+  padding: 3em 3em 1.5em;
 }
 
 .newsletter__title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .newsletter__text {
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.5;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .newsletter__form-elements {
@@ -501,16 +517,16 @@ button:focus {
 
 .newsletter__input {
   width: 25rem;
-  height: 4rem;
+  height: 3rem;
   border: 4px solid #eee;
-  color: #3b4487;
+  color: #002290;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 0.0625rem;
   -webkit-transition: border 0.3s;
   -o-transition: border 0.3s;
@@ -521,7 +537,7 @@ button:focus {
 
 .newsletter__input:focus {
   outline: none;
-  border: 4px solid #ac1c1c;
+  border: 4px solid #e62837;
 }
 
 .newsletter__input:valid {
@@ -531,16 +547,16 @@ button:focus {
 .newsletter__email-sign {
   position: absolute;
   left: 22.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #9aade4;
 }
 
 .newsletter__button {
-  height: 4rem;
+  height: 3rem;
   color: #fff;
   background-color: #00ad00;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   display: -webkit-box;
@@ -574,51 +590,16 @@ button:focus {
 
 .newsletter__alert {
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   display: block;
-  font-size: 1.375rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 500;
   letter-spacing: 0.125rem;
   color: #96281b;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-
-.newsletter__exclamation {
-  position: absolute;
-  top: 4.625rem;
-  min-height: 2rem;
-  background-color: #fff;
-  border: 1px solid orange;
-  -webkit-box-shadow: 0.25em 0.25rem 0.5rem #555;
-          box-shadow: 0.25em 0.25rem 0.5rem #555;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.25rem;
-  padding: 0.5em 1em;
-}
-
-.newsletter__exclamation i {
-  font-size: 1.25rem;
-  color: orange;
-  margin-right: 0.5rem;
-}
-
-.newsletter__exclamation::before {
-  content: "";
-  position: absolute;
-  top: -0.75rem;
-  left: 4rem;
-  border-top: 0;
-  border-left: 0.75rem solid transparent;
-  border-right: 0.75rem solid transparent;
-  border-bottom: 0.75rem solid #fff;
 }
 
 .newsletter__modal {
@@ -675,7 +656,7 @@ button:focus {
 }
 
 .modal__sign {
-  color: #fff;
+  color: #00ad00;
   font-size: 8rem;
   letter-spacing: 0.125rem;
   text-align: center;
@@ -684,7 +665,7 @@ button:focus {
 .modal__text-box {
   width: 100%;
   height: 55%;
-  color: #3b4487;
+  color: #002290;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,6 +681,7 @@ button:focus {
 }
 
 .modal__text-title {
+  color: #00ad00;
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 1.5;
@@ -720,15 +702,20 @@ button:focus {
 .art-column {
   position: relative;
   top: 6rem;
+  padding: 8rem 0rem 2em;
 }
 
 .art-column__title {
-  color: #3b4487;
+  color: #002290;
   font-size: 4rem;
   text-shadow: 0.1rem 0.1rem 0.2rem #888;
   letter-spacing: 0.25rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.art-column__title span {
+  color: #e62837;
 }
 
 .art-column__wrapper {
@@ -744,10 +731,32 @@ button:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
+  -webkit-box-shadow: 0rem 0rem 0.625rem #888;
+          box-shadow: 0rem 0rem 0.625rem #888;
+  padding: 2em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.article:hover {
+  -webkit-transform: translateY(-1rem);
+      -ms-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-box-shadow: 0rem 0rem 1.25rem #888;
+          box-shadow: 0rem 0rem 1.25rem #888;
+}
+
+.article:hover .article__image {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .article__image-box {
   width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .article__image {
@@ -757,6 +766,44 @@ button:focus {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.article__text-box {
+  line-height: 1.5;
+}
+
+.article__title {
+  color: #002290;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.article__title:hover {
+  color: #1e90ff;
+}
+
+.article__text {
+  color: #555;
+  font-size: 1.125rem;
+}
+
+.article__text span {
+  color: #e62837;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.article__text span:hover {
+  text-decoration: underline;
 }
 
 /* End of  Articles Section */

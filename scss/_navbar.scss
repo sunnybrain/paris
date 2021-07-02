@@ -3,9 +3,9 @@
 $height-nav: 6rem;
 
 .button-container {
-  position: fixed;
+  position: absolute;
   top: $height-nav * 0.5;
-  left: 1rem;
+  left: 0rem;
 
   z-index: 30;
   transform: translateY(-50%);
