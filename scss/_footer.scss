@@ -1,0 +1,102 @@
+/* Footer */
+
+.footer {
+  position: relative;
+  top: $height-nav;
+
+  color: #f2f1ef;
+  background-color: $color-primary;
+
+  padding: 6em 0em 4em;
+
+  &__container {
+    font-size: 1.125rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 5rem;
+
+    &--center {
+    }
+  }
+
+  &__content {
+    letter-spacing: 0.125rem;
+    margin: auto;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
+  &__location {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  &__email {
+    margin-right: 3rem;
+  }
+
+  &__coordinates {
+    position: relative;
+    margin-right: 3rem;
+
+    &::before {
+      content: "\f005";
+      font-family: "Font Awesome 5 Free";
+      font-size: 0.75rem;
+      color: #fff;
+
+      position: absolute;
+      left: -1.5rem;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__address {
+    width: 10rem;
+    position: relative;
+    left: 18rem;
+
+    margin-right: 0;
+  }
+
+  &__socials {
+    flex: 1 1 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__icon-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    width: 7.75rem;
+    cursor: pointer;
+    padding: 1em;
+    border: 1px solid #fff;
+
+    &:hover {
+      color: $color-secondary;
+      border: 1px solid $color-secondary;
+    }
+  }
+
+  &__social-name {
+    margin-bottom: 1rem;
+  }
+
+  &__copyright {
+    color: #7bacdd;
+    text-align: center;
+  }
+}
+
+/* Enf of Footer */

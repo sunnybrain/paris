@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paris: Fall in Love</title>
-    <link rel="stylesheet" href="css/hamburgerStyle.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -14,6 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/hamburgerStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- NavBar -->
@@ -96,12 +96,7 @@
           >
         </li>
         <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
-            ><i class="fas fa-exclamation-circle"></i>Good to Know</a
-          >
-        </li>
-        <li class="sidebar__item">
-          <a href="#" class="sidebar__link"
+          <a href="#topAttractions" class="sidebar__link"
             ><i class="fas fa-magnet"></i>Top Attractions</a
           >
         </li>
@@ -508,13 +503,7 @@
       </div>
     </section>
 
-    <section class="info">
-      <div class="info__container container">
-        <h3 class="info__title"></h3>
-      </div>
-    </section>
-
-    <section class="brief">
+    <section class="brief" id="topAttractions">
       <div class="brief__container container">
         <h3 class="brief__title">Top Attractions of <span>Paris</span></h3>
         <div class="brief__wrapper">
@@ -589,6 +578,52 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <div class="footer__wrapper--center">
+            <div class="footer__content">
+              <p class="footer__text"><span>Paris</span> Fall in Love</p>
+              <div class="footer__location">
+                <p class="footer__email">paris@love.com</p>
+                <p class="footer__coordinates">48° 51′ N</p>
+                <p class="footer__coordinates">2° 21′ E</p>
+              </div>
+              <p class="footer__address">Paris, France</p>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <div class="footer__icon-box">
+              <p class="footer__social-name">Facebook</p>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="footer__icon-box">
+              <p class="footer__social-name">Instagram</p>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="footer__icon-box">
+              <p class="footer__social-name">Youtube</p>
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div class="footer__icon-box">
+              <p class="footer__social-name">Twitter</p>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="footer__icon-box">
+              <p class="footer__social-name">LinkedIn</p>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__copyright">
+          CopyRight &copy; Paris Travel Guide. 2021 All Rights Reserved
+        </p>
+      </div>
+    </footer>
 
     <script src="js/main.js" type="module"></script>
     <!-- <script src="js/execution.js" type="module"></script> -->

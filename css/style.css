@@ -914,3 +914,115 @@ h6 {
 }
 
 /* End of  Brief Section */
+/* Footer */
+.footer {
+  position: relative;
+  top: 6rem;
+  color: #f2f1ef;
+  background-color: #002290;
+  padding: 6em 0em 4em;
+}
+
+.footer__container {
+  font-size: 1.125rem;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.footer__content {
+  letter-spacing: 0.125rem;
+  margin: auto;
+}
+
+.footer__text {
+  margin-bottom: 1rem;
+}
+
+.footer__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.footer__email {
+  margin-right: 3rem;
+}
+
+.footer__coordinates {
+  position: relative;
+  margin-right: 3rem;
+}
+
+.footer__coordinates::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.75rem;
+  color: #fff;
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer__address {
+  width: 10rem;
+  position: relative;
+  left: 18rem;
+  margin-right: 0;
+}
+
+.footer__socials {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer__icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 7.75rem;
+  cursor: pointer;
+  padding: 1em;
+  border: 1px solid #fff;
+}
+
+.footer__icon-box:hover {
+  color: #e62837;
+  border: 1px solid #e62837;
+}
+
+.footer__social-name {
+  margin-bottom: 1rem;
+}
+
+.footer__copyright {
+  color: #7bacdd;
+  text-align: center;
+}
+
+/* Enf of Footer */
