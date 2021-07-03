@@ -240,7 +240,11 @@ h6 {
 .section {
   position: relative;
   top: 6rem;
-  padding: 8em 0em 0em;
+  padding: 8em 0em 8em;
+}
+
+.section#topSights, .section#frenchFood {
+  background-color: #f2f2f2;
 }
 
 .section__container {
@@ -323,9 +327,10 @@ h6 {
       -ms-flex: 0 0 30.3333%;
           flex: 0 0 30.3333%;
   max-height: 36rem;
-  cursor: pointer;
+  background-color: #fff;
   -webkit-box-shadow: 0rem 0rem 0.625rem #888;
           box-shadow: 0rem 0rem 0.625rem #888;
+  cursor: pointer;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.4s ease-in-out;
   transition: -webkit-box-shadow 0.3s ease-in, -webkit-transform 0.4s ease-in-out;
   -o-transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out;
@@ -433,7 +438,7 @@ h6 {
 .newsletter {
   position: relative;
   top: 6rem;
-  padding: 8em 0em 0em;
+  padding: 8em 0em 8em;
 }
 
 .newsletter__container {
@@ -702,7 +707,8 @@ h6 {
 .art-column {
   position: relative;
   top: 6rem;
-  padding: 8rem 0rem 2em;
+  background-color: #f2f2f2;
+  padding: 8rem 0rem 8em;
 }
 
 .art-column__title {
@@ -731,6 +737,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
+  background-color: #fff;
   -webkit-box-shadow: 0rem 0rem 0.625rem #888;
           box-shadow: 0rem 0rem 0.625rem #888;
   padding: 2em;
@@ -807,3 +814,103 @@ h6 {
 }
 
 /* End of  Articles Section */
+/* Entry Secion */
+.entry {
+  position: relative;
+  top: 6rem;
+  padding: 8em 0em 8em;
+}
+
+.entry__title {
+  color: #e62837;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.entry__text-box {
+  margin-bottom: 2.5rem;
+}
+
+.text-box__subtitle {
+  color: #002290;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.text-box__text {
+  color: #222;
+  font-size: 1.25rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* End of  Entry Secion */
+/* Brief Section */
+.brief {
+  position: relative;
+  top: 6rem;
+  padding: 8em 0em 8em;
+  background-color: #f2f2f2;
+}
+
+.brief__title {
+  color: #002290;
+  font-size: 4rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #888;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brief__title span {
+  color: #e62837;
+}
+
+.brief__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 100%;
+  color: black;
+}
+
+.brief__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #002290;
+  font-size: 1.25rem;
+  border: 1px solid #002290;
+  cursor: pointer;
+  margin: 1rem 2rem;
+}
+
+.brief__item:hover .brief__text {
+  background-color: #002290;
+  color: #fff;
+}
+
+.brief__number {
+  color: #fff;
+  background-color: #002290;
+  padding: 1em;
+}
+
+.brief__text {
+  background-color: #fff;
+  padding: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End of  Brief Section */

@@ -4,7 +4,9 @@
   position: relative;
   top: $height-nav;
 
-  padding: 8rem 0rem 2em;
+  background-color: #f2f2f2;
+
+  padding: 8rem 0rem 8em;
 
   &__container {
   }
@@ -35,6 +37,7 @@
 
 .article {
   flex: 1 1 45%;
+  background-color: #fff;
 
   box-shadow: 0rem 0rem 0.625rem #888;
   padding: 2em;

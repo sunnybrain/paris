@@ -1,0 +1,45 @@
+/* Entry Secion */
+
+.entry {
+  position: relative;
+  top: $height-nav;
+
+  padding: 8em 0em 8em;
+
+  &__container {
+  }
+
+  &__title {
+    color: $color-secondary;
+    font-size: 4rem;
+    font-weight: 500;
+
+    letter-spacing: 0.25rem;
+    text-align: center;
+
+    margin-bottom: 3rem;
+  }
+
+  &__text-box {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.text-box {
+  &__subtitle {
+    color: $color-primary;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: #222;
+    font-size: 1.25rem;
+    text-align: justify;
+    // max-width: 40rem;
+    line-height: 1.6;
+  }
+}
+
+/* End of  Entry Secion */

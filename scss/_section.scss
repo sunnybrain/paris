@@ -3,7 +3,12 @@
   position: relative;
   top: $height-nav;
 
-  padding: 8em 0em 0em;
+  padding: 8em 0em 8em;
+
+  &#topSights,
+  &#frenchFood {
+    background-color: #f2f2f2;
+  }
 
   &__container {
     padding: 1em 1em 0em;
@@ -14,7 +19,7 @@
     color: $color-primary;
     font-size: 3rem;
     font-weight: 500;
-    // text-shadow: 0.1rem 0.1rem 0.2rem #888;
+
     letter-spacing: 0.25rem;
     text-align: center;
 
@@ -84,9 +89,10 @@ $size-guide: 302px;
 .guide {
   flex: 0 0 30.3333%;
   max-height: 36rem;
-  cursor: pointer;
+  background-color: #fff;
 
   box-shadow: 0rem 0rem 0.625rem #888;
+  cursor: pointer;
   transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out;
 
   position: relative;
