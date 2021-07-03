@@ -24,6 +24,11 @@
   &__content {
     letter-spacing: 0.125rem;
     margin: auto;
+
+    & span:hover {
+      color: $color-secondary;
+      cursor: pointer;
+    }
   }
 
   &__text {

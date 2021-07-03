@@ -69,7 +69,7 @@ h6 {
 .nav {
   width: 100%;
   height: 6rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #717bc1;
   position: fixed;
   top: 0;
@@ -287,7 +287,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   color: #002290;
-  background-color: inherit;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   font-size: 2rem;
@@ -937,6 +937,11 @@ h6 {
 .footer__content {
   letter-spacing: 0.125rem;
   margin: auto;
+}
+
+.footer__content span:hover {
+  color: #e62837;
+  cursor: pointer;
 }
 
 .footer__text {
