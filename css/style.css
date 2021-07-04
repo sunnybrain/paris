@@ -254,7 +254,7 @@ h6 {
 
 .section__title {
   color: #002290;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 500;
   letter-spacing: 0.25rem;
   text-align: center;
@@ -814,11 +814,107 @@ h6 {
 }
 
 /* End of  Articles Section */
+/* Slider */
+.slider {
+  position: relative;
+  top: 6rem;
+  padding: 8em 0em 8em;
+}
+
+.slider__title {
+  color: #e62837;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.slider__main-image-box {
+  width: 100%;
+  height: 58rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.slider__main-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: scale 0.3s ease-in;
+  -o-transition: scale 0.3s ease-in;
+  transition: scale 0.3s ease-in;
+  color: #fff;
+  background-color: transparent;
+  font-size: 2.5rem;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.slider__btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider__btn:active {
+  -webkit-transform: translateY(-50%) scale(0.98);
+      -ms-transform: translateY(-50%) scale(0.98);
+          transform: translateY(-50%) scale(0.98);
+}
+
+.slider__btn--prev {
+  left: 0rem;
+}
+
+.slider__btn--next {
+  right: 0rem;
+}
+
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin: 0 -1%;
+}
+
+.slider__image-box {
+  height: 13rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23%;
+          flex: 0 1 23%;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.slider__image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End of Slider */
 /* Entry Secion */
 .entry {
   position: relative;
   top: 6rem;
   padding: 8em 0em 8em;
+  background-color: #f2f2f2;
 }
 
 .entry__title {
@@ -854,7 +950,6 @@ h6 {
   position: relative;
   top: 6rem;
   padding: 8em 0em 8em;
-  background-color: #f2f2f2;
 }
 
 .brief__title {

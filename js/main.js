@@ -128,7 +128,7 @@ buttonSlideEvents("topSights");
 buttonSlideEvents("topMuseums");
 buttonSlideEvents("frenchFood");
 
-/* Submit Button */
+/* Newsletter Submit Button */
 
 const submitButton = document.querySelector("#submit");
 const input = document.querySelector(".newsletter__input");
@@ -150,4 +150,48 @@ window.addEventListener("click", (e) => {
   if (e.target == modal) {
     modal.style.display = "none";
   }
+});
+
+/* Slider */
+
+const nextSlideBtn = document.querySelector(".slider__btn--next");
+const prevSlideBtn = document.querySelector(".slider__btn--prev");
+
+const mainImage = document.querySelector(".slider__main-image");
+const images = document.querySelectorAll(".slider__image");
+
+let imageCounter = 1;
+images[0].style.opacity = "1";
+
+nextSlideBtn.addEventListener("click", () => {
+  imageCounter++;
+  if (imageCounter === images.length + 1) {
+    imageCounter = 1;
+  }
+  mainImage.src = `images/slides/${imageCounter}.jpg`;
+
+  images.forEach((image) => (image.style.opacity = ".6"));
+
+  images[imageCounter - 1].style.opacity = "1";
+});
+
+prevSlideBtn.addEventListener("click", () => {
+  imageCounter--;
+  if (imageCounter === 0) {
+    imageCounter = images.length;
+  }
+  mainImage.src = `images/slides/${imageCounter}.jpg`;
+
+  images.forEach((image) => (image.style.opacity = ".6"));
+
+  images[imageCounter - 1].style.opacity = "1";
+});
+
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    images.forEach((image) => (image.style.opacity = ".6"));
+    image.style.opacity = "1";
+
+    mainImage.src = image.src;
+  });
 });
