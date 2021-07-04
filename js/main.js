@@ -8,11 +8,39 @@ import { foodList } from "../js/foodList.js";
 const burgerBtn = document.querySelector(".button-container");
 const sideBar = document.querySelector(".sidebar");
 
-// Burger Button
+// Burger Button and Sidebar Animations
 
 burgerBtn.addEventListener("click", () => {
-  sideBar.classList.toggle("sidebar--opened");
+  if (!sideBar.classList.contains("sidebar--opened")) {
+    sideBar.classList.add("sidebar--opened");
+
+    let links = document.querySelectorAll(".sidebar--opened .sidebar__item");
+
+    setTimeout(() => {
+      links.forEach((link, index) => {
+        link.style.opacity = "0";
+        link.style.animation = `sidebarAnimation 1s ${0.15 * index}s forwards`;
+      });
+    }, 600);
+  } else if (sideBar.classList.contains("sidebar--opened")) {
+    let links = document.querySelectorAll(".sidebar--opened  .sidebar__item");
+    let linkNum = links.length;
+
+    links.forEach((link, index) => {
+      link.style.opacity = "1";
+      link.style.margin = "1.5rem 4rem";
+      link.style.animation = `reverseSidebarAnimation 1s ${
+        linkNum * 0.15 - 0.15 * index
+      }s forwards`;
+    });
+
+    setTimeout(() => {
+      sideBar.classList.remove("sidebar--opened");
+    }, linkNum * 150 + 1000);
+  }
 });
+
+// SideBar Animations
 
 // Top Actitvites Section Data Added
 

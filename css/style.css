@@ -173,7 +173,8 @@ h6 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 1.5rem 4rem;
+  margin: 1.5rem 7.5rem;
+  opacity: 0;
   position: relative;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -195,6 +196,50 @@ h6 {
   color: #002290;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/* Sidebar Animations */
+@-webkit-keyframes sidebarAnimation {
+  0% {
+    margin: 1.5rem 7.5rem;
+    opacity: 0;
+  }
+  100% {
+    margin: 1.5rem 4rem;
+    opacity: 1;
+  }
+}
+@keyframes sidebarAnimation {
+  0% {
+    margin: 1.5rem 7.5rem;
+    opacity: 0;
+  }
+  100% {
+    margin: 1.5rem 4rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes reverseSidebarAnimation {
+  0% {
+    margin: 1.5rem 4rem;
+    opacity: 1;
+  }
+  100% {
+    margin: 1.5rem 7.5rem;
+    opacity: 0;
+  }
+}
+
+@keyframes reverseSidebarAnimation {
+  0% {
+    margin: 1.5rem 4rem;
+    opacity: 1;
+  }
+  100% {
+    margin: 1.5rem 7.5rem;
+    opacity: 0;
+  }
 }
 
 /* End of Sidebar Section */
