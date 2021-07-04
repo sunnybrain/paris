@@ -4,19 +4,19 @@
   position: relative;
   top: $height-nav;
 
-  padding: 8em 0em 8em;
+  padding: $sections-padding;
 
   &__container {
   }
 
   &__title {
     color: $color-primary;
-    font-size: 4rem;
+    font-size: $title-font-size;
     text-shadow: 0.1rem 0.1rem 0.2rem #888;
     letter-spacing: 0.25rem;
     text-align: center;
 
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     & span {
       color: $color-secondary;
@@ -26,6 +26,7 @@
   &__wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: wrap;
 
     width: 100%;
@@ -37,11 +38,11 @@
     display: flex;
 
     color: $color-primary;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     border: 1px solid $color-primary;
 
     cursor: pointer;
-    margin: 1rem 2rem;
+    margin: 1rem;
 
     &:hover .brief__text {
       background-color: $color-primary;

@@ -6,14 +6,14 @@
 
   background-color: #f2f2f2;
 
-  padding: 8rem 0rem 8em;
+  padding: 4rem 0rem 4em;
 
   &__container {
   }
 
   &__title {
     color: $color-primary;
-    font-size: 4rem;
+    font-size: $title-font-size;
     text-shadow: 0.1rem 0.1rem 0.2rem #888;
     letter-spacing: 0.25rem;
     text-align: center;
@@ -27,8 +27,9 @@
 
   &__wrapper {
     display: flex;
+    justify-content: center;
     flex-flow: wrap;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   &__article {
@@ -36,11 +37,11 @@
 }
 
 .article {
-  flex: 1 1 45%;
+  flex: 0 1 30%;
   background-color: #fff;
 
   box-shadow: 0rem 0rem 0.625rem #888;
-  padding: 2em;
+  padding: 1em 1em 1.5em;
 
   transition: all 0.3s ease-in-out;
 
@@ -58,12 +59,12 @@
 
     overflow: hidden;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   &__image {
     width: 100%;
-    max-height: 20rem;
+    max-height: 13rem;
     object-fit: cover;
     object-position: bottom;
 
@@ -77,10 +78,10 @@
 
   &__title {
     color: #002290;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     cursor: pointer;
 
@@ -91,7 +92,8 @@
 
   &__text {
     color: #555;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    text-align: justify;
 
     & span {
       color: $color-secondary;

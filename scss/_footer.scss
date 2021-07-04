@@ -7,15 +7,15 @@
   color: #f2f1ef;
   background-color: $color-primary;
 
-  padding: 6em 0em 4em;
+  padding: 3em 0em 3em;
 
   &__container {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   &__wrapper {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 
     &--center {
     }
@@ -65,7 +65,7 @@
   &__address {
     width: 10rem;
     position: relative;
-    left: 18rem;
+    left: 17rem;
 
     margin-right: 0;
   }

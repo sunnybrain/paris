@@ -42,8 +42,6 @@ burgerBtn.addEventListener("click", () => {
   }
 });
 
-// SideBar Animations
-
 // Top Actitvites Section Data Added
 
 function dataAddedToSection(dataList, sectionId, imagePosition) {
@@ -217,11 +215,13 @@ prevSlideBtn.addEventListener("click", () => {
   images[imageCounter - 1].style.opacity = "1";
 });
 
-images.forEach((image) => {
+images.forEach((image, index) => {
   image.addEventListener("click", () => {
-    images.forEach((image) => (image.style.opacity = ".6"));
+    images.forEach((image) => {
+      image.style.opacity = "0.6";
+    });
     image.style.opacity = "1";
-
+    imageCounter = index + 1;
     mainImage.src = image.src;
   });
 });

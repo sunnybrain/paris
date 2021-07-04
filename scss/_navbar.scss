@@ -1,6 +1,6 @@
 /* Navbar Section */
 
-$height-nav: 6rem;
+$height-nav: 4rem;
 
 .button-container {
   position: absolute;
@@ -47,8 +47,8 @@ $height-nav: 6rem;
   }
 
   &__logo-box {
-    height: 4.375rem;
-    width: 4.375rem;
+    height: 3.5rem;
+    width: 3.5rem;
 
     margin-right: 2rem;
   }
@@ -64,14 +64,14 @@ $height-nav: 6rem;
 
   &__title {
     color: $color-secondary;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
   }
 
   &__subtitle {
     color: $color-primary;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
