@@ -9,6 +9,10 @@ $height-nav: 4rem;
 
   z-index: 30;
   transform: translateY(-50%);
+
+  @media (max-width: 1250px) {
+    left: 2rem;
+  }
 }
 
 .nav {

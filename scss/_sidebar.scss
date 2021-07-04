@@ -23,13 +23,16 @@
     flex-flow: column;
 
     margin-top: 2rem;
+
+    @media (max-width: 1250px) {
+      margin-top: 0rem;
+    }
   }
 
   &__item {
     display: flex;
     justify-content: flex-end;
 
-    // margin: 1.5rem 4rem;
     margin: 1.5rem 7.5rem;
     opacity: 0;
 

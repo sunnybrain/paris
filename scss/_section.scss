@@ -81,6 +81,10 @@
   &__guide {
     margin: 0 1.5%;
     // left: -334px;
+
+    @media (max-width: 650px) {
+      margin: 0 3%;
+    }
   }
 }
 
@@ -96,6 +100,14 @@ $size-guide: 302px;
   transition: box-shadow 0.3s ease-in, transform 0.4s ease-in-out;
 
   position: relative;
+
+  @media (max-width: 850px) {
+    flex: 0 0 47%;
+  }
+
+  @media (max-width: 650px) {
+    flex: 0 0 94%;
+  }
 
   &:hover {
     transform: translateY(-1rem);

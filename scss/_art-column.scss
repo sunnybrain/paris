@@ -9,6 +9,11 @@
   padding: 4rem 0rem 4em;
 
   &__container {
+    padding: 0 1em;
+
+    @media (max-width: 850px) {
+      padding: 0 2em;
+    }
   }
 
   &__title {
@@ -30,6 +35,10 @@
     justify-content: center;
     flex-flow: wrap;
     gap: 2rem;
+
+    @media (max-width: 950px) {
+      gap: 1rem;
+    }
   }
 
   &__article {
@@ -44,6 +53,14 @@
   padding: 1em 1em 1.5em;
 
   transition: all 0.3s ease-in-out;
+
+  @media (max-width: 850px) {
+    flex: 0 1 48%;
+  }
+
+  @media (max-width: 550px) {
+    flex: 0 1 98%;
+  }
 
   &:hover {
     transform: translateY(-1rem);

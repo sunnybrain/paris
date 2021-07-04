@@ -118,10 +118,21 @@ function buttonSlideEvents(sectionId) {
   const slides = Array.from(galleryWrapper.children);
   let slidesNumber = slides.length;
 
+  let windowWidth = window.innerWidth;
   let slideWidth = galleryWrapper.getBoundingClientRect().width / 3;
+  if (windowWidth <= 850 && windowWidth > 650) {
+    slideWidth = galleryWrapper.getBoundingClientRect().width / 2;
+  } else if (windowWidth <= 650) {
+    slideWidth = galleryWrapper.getBoundingClientRect().width;
+  }
 
   window.addEventListener("resize", () => {
     slideWidth = galleryWrapper.getBoundingClientRect().width / 3;
+    if (windowWidth <= 850 && windowWidth > 650) {
+      slideWidth = galleryWrapper.getBoundingClientRect().width / 2;
+    } else if (windowWidth <= 650) {
+      slideWidth = galleryWrapper.getBoundingClientRect().width;
+    }
   });
 
   let slideCount = 0;

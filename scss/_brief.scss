@@ -21,6 +21,10 @@
     & span {
       color: $color-secondary;
     }
+
+    @media (max-width: 650px) {
+      padding: 0 1em;
+    }
   }
 
   &__wrapper {
@@ -47,6 +51,11 @@
     &:hover .brief__text {
       background-color: $color-primary;
       color: #fff;
+    }
+
+    @media (max-width: 850px) {
+      margin: 0.5rem;
+      font-size: 0.875rem;
     }
   }
 
