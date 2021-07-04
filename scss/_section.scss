@@ -38,11 +38,11 @@
 .gallery {
   position: relative;
 
-  padding: 0 5rem;
+  padding: 0 4.5rem;
 
   &__button {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 
     border-radius: 50%;
     box-shadow: 0rem 0rem 0.5rem #888;
@@ -57,7 +57,7 @@
     position: absolute;
     top: 50%;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     transform: translateY(-50%);
     cursor: pointer;
 

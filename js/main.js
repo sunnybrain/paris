@@ -19,7 +19,9 @@ burgerBtn.addEventListener("click", () => {
     setTimeout(() => {
       links.forEach((link, index) => {
         link.style.opacity = "0";
-        link.style.animation = `sidebarAnimation 1s ${0.15 * index}s forwards`;
+        link.style.animation = `sidebarAnimation 0.6s ${
+          0.15 * index
+        }s forwards`;
       });
     }, 600);
   } else if (sideBar.classList.contains("sidebar--opened")) {
@@ -29,14 +31,14 @@ burgerBtn.addEventListener("click", () => {
     links.forEach((link, index) => {
       link.style.opacity = "1";
       link.style.margin = "1.5rem 4rem";
-      link.style.animation = `reverseSidebarAnimation 1s ${
+      link.style.animation = `reverseSidebarAnimation 0.6s ${
         linkNum * 0.15 - 0.15 * index
       }s forwards`;
     });
 
     setTimeout(() => {
       sideBar.classList.remove("sidebar--opened");
-    }, linkNum * 150 + 1000);
+    }, linkNum * 150 + 600);
   }
 });
 

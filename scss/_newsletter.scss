@@ -42,6 +42,7 @@
     flex: 1 1 50%;
 
     background-color: #889aee;
+    background-color: $color-primary;
     padding: 3em 3em 1.5em;
   }
 
@@ -138,9 +139,9 @@
 
     display: block;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.125rem;
-    color: #96281b;
+    color: #f22613;
 
     opacity: 0;
     transition: opacity 0.3s;
