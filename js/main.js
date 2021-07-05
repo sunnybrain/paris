@@ -30,7 +30,7 @@ burgerBtn.addEventListener("click", () => {
 
     links.forEach((link, index) => {
       link.style.opacity = "1";
-      link.style.margin = "1.5rem 4rem";
+      link.style.margin = "1rem 4rem";
       link.style.animation = `reverseSidebarAnimation 0.6s ${
         linkNum * 0.15 - 0.15 * index
       }s forwards`;

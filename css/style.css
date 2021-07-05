@@ -156,6 +156,12 @@ h6 {
   transition: left 0.6s;
 }
 
+@media (max-width: 650px) {
+  .sidebar {
+    width: 23rem;
+  }
+}
+
 .sidebar--opened {
   left: 0rem;
 }
@@ -169,12 +175,18 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 1250px) {
   .sidebar__list {
     margin-top: 0rem;
+  }
+}
+
+@media (max-height: 850px) {
+  .sidebar__list {
+    height: 80%;
   }
 }
 
@@ -185,7 +197,7 @@ h6 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 1.5rem 7.5rem;
+  margin: 1rem 7.5rem;
   opacity: 0;
   position: relative;
   -webkit-transition: all 0.4s;
@@ -213,43 +225,43 @@ h6 {
 /* Sidebar Animations */
 @-webkit-keyframes sidebarAnimation {
   0% {
-    margin: 1.5rem 7.5rem;
+    margin: 1rem 7.5rem;
     opacity: 0;
   }
   100% {
-    margin: 1.5rem 4rem;
+    margin: 1rem 4rem;
     opacity: 1;
   }
 }
 @keyframes sidebarAnimation {
   0% {
-    margin: 1.5rem 7.5rem;
+    margin: 1rem 7.5rem;
     opacity: 0;
   }
   100% {
-    margin: 1.5rem 4rem;
+    margin: 1rem 4rem;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes reverseSidebarAnimation {
   0% {
-    margin: 1.5rem 4rem;
+    margin: 1rem 4rem;
     opacity: 1;
   }
   100% {
-    margin: 1.5rem 7.5rem;
+    margin: 1rem 7.5rem;
     opacity: 0;
   }
 }
 
 @keyframes reverseSidebarAnimation {
   0% {
-    margin: 1.5rem 4rem;
+    margin: 1rem 4rem;
     opacity: 1;
   }
   100% {
-    margin: 1.5rem 7.5rem;
+    margin: 1rem 7.5rem;
     opacity: 0;
   }
 }
